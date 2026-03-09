@@ -1,0 +1,16 @@
+# Cloudflare Pages Configuration
+# https://developers.cloudflare.com/pages/configuration/
+
+[build]
+  # No build command - static site
+  command = "echo 'Static site, no build needed'"
+  publish = "."
+
+[functions]
+  # Directory containing Pages Functions
+  directory = "functions"
+
+# Environment variables (set these in Cloudflare dashboard)
+# [vars]
+# SANDBOX_MODE = "true"
+# PIPELINE_WEBHOOK_URL = "https://your-server.com/api/audit"

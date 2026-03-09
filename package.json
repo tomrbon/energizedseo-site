@@ -1,0 +1,22 @@
+{
+  "name": "energizedseo-site",
+  "version": "1.0.0",
+  "description": "EnergizedSEO landing page with Cloudflare Functions backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "deploy": "wrangler pages deploy .",
+    "test": "node test-form.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomrbon/energizedseo-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomrbon/energizedseo-site/issues"
+  },
+  "homepage": "https://github.com/tomrbon/energizedseo-site#readme"
+}
