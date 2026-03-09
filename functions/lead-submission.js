@@ -35,24 +35,25 @@ export async function onRequestPost(context) {
       });
     }
     
-    // Store lead in D1 database (Cloudflare's managed SQLite)
-    if (env.DB) {
-      await env.DB.prepare(`
-        INSERT INTO leads (name, email, business, industry, website, message, submitted_at, status)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-      `).bind(
-        lead.name,
-        lead.email,
-        lead.business,
-        lead.industry,
-        lead.website,
-        lead.message,
-        lead.submitted_at,
-        lead.status
-      ).run();
-    } else {
-      console.warn('No D1 database configured - lead not stored');
-    }
+    // Log lead (database storage optional - uncomment when D1 is configured)
+    console.log('📥 New lead submitted:', JSON.stringify(lead, null, 2));
+    
+    // D1 database storage (optional - skip if not configured)
+    // if (env.DB) {
+    //   await env.DB.prepare(`
+    //     INSERT INTO leads (name, email, business, industry, website, message, submitted_at, status)
+    //     VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    //   `).bind(
+    //     lead.name,
+    //     lead.email,
+    //     lead.business,
+    //     lead.industry,
+    //     lead.website,
+    //     lead.message,
+    //     lead.submitted_at,
+    //     lead.status
+    //   ).run();
+    // }
     
     // Trigger audit pipeline (async, don't wait)
     // TEST MODE: All emails go to tomrbon@gmail.com with "TEST: PLUMBING" subject
@@ -69,15 +70,10 @@ export async function onRequestPost(context) {
       lead.mockup_url = `https://energizedseo.com/preview/${slug}/`;
       lead.status = 'mockup_ready';
       
-      // Update database with mockup URL
-      if (env.DB && lead.mockup_url) {
-        await env.DB.prepare(`
-          UPDATE leads SET mockup_url = ?, status = ? WHERE email = ?
-        `).bind(lead.mockup_url, lead.status, lead.email).run();
-      }
+      console.log('✅ Mock preview URL:', lead.mockup_url);
       
       // Send test email to tomrbon@gmail.com
-      await sendTestEmail(lead, testEmail, testSubject, env);
+      sendTestEmail(lead, testEmail, testSubject);
     } else {
       // Production: trigger full pipeline
       await triggerPipeline(lead, env);
@@ -107,7 +103,7 @@ export async function onRequestPost(context) {
   }
 }
 
-async function sendTestEmail(lead, testEmail, testSubject, env) {
+async function sendTestEmail(lead, testEmail, testSubject) {
   /**
    * TEST MODE: Send email to tomrbon@gmail.com
    * Shows exactly what a customer would receive
