@@ -33,15 +33,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (successMessage) {
                     successMessage.classList.remove('hidden');
                     
-                    // Show sandbox mode notice if applicable
-                    if (result.sandbox_mode) {
-                        const sandboxNotice = document.createElement('div');
-                        sandboxNotice.className = 'mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-lg text-sm text-yellow-800';
-                        sandboxNotice.innerHTML = `
-                            <strong>🧪 Sandbox Mode:</strong> No email sent. 
-                            ${result.mockup_url ? `Preview would be at: <a href="${result.mockup_url}" class="underline font-medium">${result.mockup_url}</a>` : ''}
+                    // Show test mode notice if applicable
+                    if (result.test_mode) {
+                        const testNotice = document.createElement('div');
+                        testNotice.className = 'mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-800';
+                        testNotice.innerHTML = `
+                            <strong>🧪 Test Mode Active:</strong> A test email has been sent to <strong>tomrbon@gmail.com</strong> with subject "TEST: PLUMBING".
+                            ${result.mockup_url ? `Preview URL: <a href="${result.mockup_url}" class="underline font-medium" target="_blank">${result.mockup_url}</a>` : ''}
                         `;
-                        successMessage.appendChild(sandboxNotice);
+                        successMessage.appendChild(testNotice);
                     }
                 }
                 
