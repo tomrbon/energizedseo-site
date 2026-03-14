@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master e-commerce SEO with this comprehensive guide covering product page optimization, category structure, technical SEO, and platform-specific tactics for Shopify, WooCommerce, and more.">
+    <title>E-commerce SEO Complete Guide: Rank Product Pages and Drive Organic Sales in 2026 | EnergizedSEO</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#fef7ee',
+                            100: '#feefdc',
+                            200: '#fdd9b0',
+                            300: '#fbb975',
+                            400: '#f78d2f',
+                            500: '#f36f0b',
+                            600: '#e05705',
+                            700: '#b94209',
+                            800: '#94360e',
+                            900: '#782f0e',
+                        },
+                        accent: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <style>
+        .prose h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1.5rem; color: #1f2937; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #1f2937; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; color: #1f2937; }
+        .prose h4 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1f2937; }
+        .prose p { margin-bottom: 1.25rem; line-height: 1.75; color: #374151; }
+        .prose a { color: #f36f0b; text-decoration: underline; }
+        .prose a:hover { color: #e05705; }
+        .prose ul, .prose ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .prose li { margin-bottom: 0.5rem; }
+        .prose blockquote { border-left: 4px solid #f36f0b; padding-left: 1rem; font-style: italic; background: #f9fafb; padding: 1rem; margin: 1.5rem 0; }
+        .prose code { background: #f3f4f6; padding: 0.2rem 0.4rem; border-radius: 0.25rem; font-size: 0.875em; }
+        .prose pre { background: #f3f4f6; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin: 1.5rem 0; }
+        .prose pre code { background: transparent; padding: 0; }
+        .prose img { max-width: 100%; height: auto; border-radius: 0.5rem; margin: 1.5rem 0; }
+        .prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+        .prose th, .prose td { border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left; }
+        .prose th { background: #f9fafb; font-weight: 600; }
+    </style>
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50" role="navigation" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <a href="/" class="flex items-center space-x-3">
+                        <span class="text-4xl" aria-hidden="true">⚡</span>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">EnergizedSEO</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/#features" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">Features</a>
+                    <a href="/#process" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">How It Works</a>
+                    <a href="/blog" class="text-primary-600 font-semibold">Blog</a>
+                    <a href="/#pricing" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">Pricing</a>
+                    <a href="/#testimonials" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">Results</a>
+                    <a href="/#contact" class="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-3 rounded-full font-semibold hover:from-primary-600 hover:to-primary-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Get Free Mockup</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 py-4 space-y-3">
+                <a href="/#features" class="block text-gray-600 hover:text-primary-600 py-2 font-medium">Features</a>
+                <a href="/#process" class="block text-gray-600 hover:text-primary-600 py-2 font-medium">How It Works</a>
+                <a href="/blog" class="block text-primary-600 font-semibold">Blog</a>
+                <a href="/#pricing" class="block text-gray-600 hover:text-primary-600 py-2 font-medium">Pricing</a>
+                <a href="/#testimonials" class="block text-gray-600 hover:text-primary-600 py-2 font-medium">Results</a>
+                <a href="/#contact" class="block bg-gradient-to-r from-primary-500 to-primary-600 text-white text-center px-6 py-3 rounded-full font-semibold">Get Free Mockup</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-primary-50 via-white to-accent-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex flex-wrap justify-center gap-2 mb-6">
+                    <span class="px-3 py-1 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full">E-commerce SEO</span> <span class="px-3 py-1 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full">Technical SEO</span> 
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+                    E-commerce SEO Complete Guide: Rank Product Pages and Drive Organic Sales in 2026
+                </h1>
+                <p class="text-xl text-gray-600 leading-relaxed mb-4">
+                    Master e-commerce SEO with this comprehensive guide covering product page optimization, category structure, technical SEO, and platform-specific tactics for Shopify, WooCommerce, and more.
+                </p>
+                <div class="text-sm text-gray-500">
+                    Published: 2026-03-14
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose prose-lg max-w-none">
+                <h1>E-commerce SEO Complete Guide: Rank Product Pages and Drive Organic Sales in 2026</h1>
+<p class="mb-4">E-commerce SEO drives high-intent traffic ready to buy. Unlike informational search, e-commerce searchers have commercial intent—they're ready to purchase. This guide covers everything you need to rank product pages, category pages, and drive organic revenue.</p>
+<p class="mb-4"><img src="/images/ecommerce-seo-guide.jpg" alt="E-commerce SEO Dashboard" class="max-w-full h-auto rounded-lg my-4">
+<em>Figure 1: E-commerce SEO dashboard showing product rankings, organic revenue, and conversion metrics</em></p>
+<h2>E-commerce Keyword Research</h2>
+<p class="mb-4">Start with buyer-intent keywords:</p>
+<p class="mb-4"><strong>E-commerce Keyword Types</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Type</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Example</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Search Intent</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Page Type</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Product</td><td class="border border-gray-200 px-4 py-2">"Nike Air Max 90"</td><td class="border border-gray-200 px-4 py-2">Transactional</td><td class="border border-gray-200 px-4 py-2">Product page</td></tr><tr><td class="border border-gray-200 px-4 py-2">Category</td><td class="border border-gray-200 px-4 py-2">"men's running shoes"</td><td class="border border-gray-200 px-4 py-2">Commercial</td><td class="border border-gray-200 px-4 py-2">Category page</td></tr><tr><td class="border border-gray-200 px-4 py-2">Commercial</td><td class="border border-gray-200 px-4 py-2">"best running shoes 2026"</td><td class="border border-gray-200 px-4 py-2">Commercial Investigation</td><td class="border border-gray-200 px-4 py-2">Blog/Buyer's guide</td></tr><tr><td class="border border-gray-200 px-4 py-2">Brand</td><td class="border border-gray-200 px-4 py-2">"Nike shoes"</td><td class="border border-gray-200 px-4 py-2">Navigational/Commercial</td><td class="border border-gray-200 px-4 py-2">Brand page</td></tr><tr><td class="border border-gray-200 px-4 py-2">Long-tail</td><td class="border border-gray-200 px-4 py-2">"running shoes for flat feet women"</td><td class="border border-gray-200 px-4 py-2">Commercial</td><td class="border border-gray-200 px-4 py-2">Category/Blog</td></tr><tr><td class="border border-gray-200 px-4 py-2">Local</td><td class="border border-gray-200 px-4 py-2">"running shoes store near me"</td><td class="border border-gray-200 px-4 py-2">Local Commercial</td><td class="border border-gray-200 px-4 py-2">Location page</td></tr></tbody></table></div>
+<strong>Product Keyword Research Process</strong>
+<ol class="list-decimal list-inside my-4">
+<li><strong>Start with product name</strong> (manufacturer + model)</li>
+<li><strong>Add modifiers</strong> (color, size, style, gender)</li>
+<li><strong>Research competitor titles</strong> (top-ranking product pages)</li>
+<li><strong>Check Amazon auto-suggest</strong> (e-commerce specific)</li>
+<li><strong>Review customer reviews</strong> (language customers use)</li>
+<li><strong>Validate search volume</strong> (keyword tools)</li>
+</ol>
+<p class="mb-4"><strong>Category Keyword Research</strong></p>
+<p class="mb-4"><strong>Process</strong></p>
+<ol class="list-decimal list-inside my-4">
+<li>Map category hierarchy (parent → child categories)</li>
+<li>Research head terms (broad categories)</li>
+<li>Find long-tail variations (specific filters)</li>
+<li>Check competitor category structures</li>
+<li>Map keywords to category levels</li>
+</ol>
+<p class="mb-4"><strong>Category Keyword Example</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Head: &quot;running shoes&quot; (main category)
+Mid: &quot;men&#x27;s running shoes&quot; (sub-category)
+Long-tail: &quot;men&#x27;s trail running shoes&quot; (filtered category)
+Specific: &quot;men&#x27;s waterproof trail running shoes size 10&quot; (product)
+</code></pre>
+<p class="mb-4"><strong>E-commerce Keyword Tools</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tool</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Best For</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Pricing</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Ahrefs</td><td class="border border-gray-200 px-4 py-2">Product/category research</td><td class="border border-gray-200 px-4 py-2">From $99/mo</td></tr><tr><td class="border border-gray-200 px-4 py-2">SEMrush</td><td class="border border-gray-200 px-4 py-2">E-commerce suite</td><td class="border border-gray-200 px-4 py-2">From $119.95/mo</td></tr><tr><td class="border border-gray-200 px-4 py-2">Amazon Keyword Tool</td><td class="border border-gray-200 px-4 py-2">Amazon-specific</td><td class="border border-gray-200 px-4 py-2">From $79/mo</td></tr><tr><td class="border border-gray-200 px-4 py-2">MerchantWords</td><td class="border border-gray-200 px-4 py-2">Amazon keywords</td><td class="border border-gray-200 px-4 py-2">From $29/mo</td></tr><tr><td class="border border-gray-200 px-4 py-2">Google Keyword Planner</td><td class="border border-gray-200 px-4 py-2">General volume</td><td class="border border-gray-200 px-4 py-2">Free</td></tr></tbody></table></div>
+Use <a href="#affiliate-link-placeholder" class="text-primary-600 hover:text-primary-700 underline">Ahrefs</a> for comprehensive e-commerce keyword research.
+<h2>1. Product Page Optimization</h2>
+<p class="mb-4">Product pages convert browsers to buyers:</p>
+<p class="mb-4"><strong>Product Title Optimization</strong></p>
+<p class="mb-4"><strong>Formula</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Brand + Product Name + Key Features + Size/Color
+Example: &quot;Nike Air Max 90 Men&#x27;s Running Shoes - White/Black - Size 10&quot;
+</code></pre>
+<p class="mb-4"><strong>Best Practices</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Element</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Recommendation</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Why</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Length</td><td class="border border-gray-200 px-4 py-2">50-60 characters</td><td class="border border-gray-200 px-4 py-2">SERP display</td></tr><tr><td class="border border-gray-200 px-4 py-2">Keyword placement</td><td class="border border-gray-200 px-4 py-2">Front-load primary keyword</td><td class="border border-gray-200 px-4 py-2">Ranking signal</td></tr><tr><td class="border border-gray-200 px-4 py-2">Unique</td><td class="border border-gray-200 px-4 py-2">Every product unique title</td><td class="border border-gray-200 px-4 py-2">Avoid duplicate content</td></tr><tr><td class="border border-gray-200 px-4 py-2">Brand</td><td class="border border-gray-200 px-4 py-2">Include brand name</td><td class="border border-gray-200 px-4 py-2">Branded searches</td></tr><tr><td class="border border-gray-200 px-4 py-2">Specificity</td><td class="border border-gray-200 px-4 py-2">Color, size, key features</td><td class="border border-gray-200 px-4 py-2">Long-tail targeting</td></tr></tbody></table></div>
+<strong>Product Description Optimization</strong>
+<p class="mb-4"><strong>Structure</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Opening paragraph (unique, compelling)
+Key features (bullet points)
+Specifications (table)
+Use cases/benefits (paragraphs)
+Social proof (reviews, testimonials)
+CTA (add to cart)
+</code></pre>
+<p class="mb-4"><strong>Best Practices</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tactic</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Implementation</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Unique content</td><td class="border border-gray-200 px-4 py-2">Never use manufacturer descriptions</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Benefits-focused</td><td class="border border-gray-200 px-4 py-2">What customer gains</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Scannable format</td><td class="border border-gray-200 px-4 py-2">Bullets, short paragraphs</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">Keyword density</td><td class="border border-gray-200 px-4 py-2">Natural, 1-2%</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">Internal links</td><td class="border border-gray-200 px-4 py-2">Related products</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr></tbody></table></div>
+<strong>Duplicate Content Warning</strong>
+<p class="mb-4">⚠️ <strong>Never use manufacturer product descriptions</strong>—thousands of sites have identical content. Write unique descriptions for every product.</p>
+<p class="mb-4"><strong>Product Image Optimization</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Element</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Best Practice</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tool</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">File format</td><td class="border border-gray-200 px-4 py-2">WebP (modern), JPEG (photos)</td><td class="border border-gray-200 px-4 py-2">Squoosh</td></tr><tr><td class="border border-gray-200 px-4 py-2">File size</td><td class="border border-gray-200 px-4 py-2"><100KB ideal, <500KB max</td><td class="border border-gray-200 px-4 py-2">TinyPNG</td></tr><tr><td class="border border-gray-200 px-4 py-2">Filename</td><td class="border border-gray-200 px-4 py-2">Descriptive (nike-air-max-90-white.jpg)</td><td class="border border-gray-200 px-4 py-2">Manual</td></tr><tr><td class="border border-gray-200 px-4 py-2">Alt text</td><td class="border border-gray-200 px-4 py-2">Product name + key features</td><td class="border border-gray-200 px-4 py-2">Manual</td></tr><tr><td class="border border-gray-200 px-4 py-2">Multiple angles</td><td class="border border-gray-200 px-4 py-2">Front, back, side, detail</td><td class="border border-gray-200 px-4 py-2">Manual</td></tr><tr><td class="border border-gray-200 px-4 py-2">Zoom functionality</td><td class="border border-gray-200 px-4 py-2">Enable for detail viewing</td><td class="border border-gray-200 px-4 py-2">Developer</td></tr></tbody></table></div>
+<strong>Product Schema Markup</strong>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-json">{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;Product&quot;,
+  &quot;name&quot;: &quot;Nike Air Max 90&quot;,
+  &quot;image&quot;: &quot;https://example.com/nike-air-max-90.jpg&quot;,
+  &quot;description&quot;: &quot;Classic running shoe with Air cushioning...&quot;,
+  &quot;brand&quot;: {
+    &quot;@type&quot;: &quot;Brand&quot;,
+    &quot;name&quot;: &quot;Nike&quot;
+  },
+  &quot;offers&quot;: {
+    &quot;@type&quot;: &quot;Offer&quot;,
+    &quot;price&quot;: &quot;120.00&quot;,
+    &quot;priceCurrency&quot;: &quot;USD&quot;,
+    &quot;availability&quot;: &quot;https://schema.org/InStock&quot;,
+    &quot;seller&quot;: {
+      &quot;@type&quot;: &quot;Organization&quot;,
+      &quot;name&quot;: &quot;Your Store&quot;
+    }
+  },
+  &quot;aggregateRating&quot;: {
+    &quot;@type&quot;: &quot;AggregateRating&quot;,
+    &quot;ratingValue&quot;: &quot;4.5&quot;,
+    &quot;reviewCount&quot;: &quot;128&quot;
+  }
+}
+</code></pre>
+<p class="mb-4"><strong>Rich Snippet Benefits</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Price displayed in SERPs</li>
+<li>Availability status (In Stock)</li>
+<li>Star ratings (review schema)</li>
+<li>Increased CTR (30%+ lift)</li>
+</ul>
+<h2>2. Category Page SEO Structure</h2>
+<p class="mb-4">Category pages target commercial keywords:</p>
+<p class="mb-4"><strong>Category Page Elements</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Element</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Optimization</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">H1</td><td class="border border-gray-200 px-4 py-2">Category name + primary keyword</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Title Tag</td><td class="border border-gray-200 px-4 py-2">Category + modifiers (best, top, 2026)</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Meta Description</td><td class="border border-gray-200 px-4 py-2">Category benefits + CTA</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">Intro Content</td><td class="border border-gray-200 px-4 py-2">100-300 words unique content</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Product Grid</td><td class="border border-gray-200 px-4 py-2">Optimized product cards</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">Filters</td><td class="border border-gray-200 px-4 py-2">SEO-friendly URLs</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">Pagination</td><td class="border border-gray-200 px-4 py-2">Rel canonical, next/prev</td><td class="border border-gray-200 px-4 py-2">High</td></tr></tbody></table></div>
+<strong>Category Content Strategy</strong>
+<p class="mb-4"><strong>Above Fold</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Category title (H1)</li>
+<li>Brief intro (50-100 words)</li>
+<li>Filter/sort options</li>
+<li>Product count</li>
+</ul>
+<p class="mb-4"><strong>Below Fold</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Extended category guide (300-500 words)</li>
+<li>Buying guide content</li>
+<li>FAQ section</li>
+<li>Related categories</li>
+</ul>
+<p class="mb-4"><strong>Category Keyword Targeting</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Primary: &quot;men&#x27;s running shoes&quot;
+Secondary: &quot;running shoes for men&quot;, &quot;mens athletic shoes&quot;
+Long-tail: &quot;best running shoes for men 2026&quot;
+</code></pre>
+<p class="mb-4"><strong>Filter and Faceted Navigation SEO</strong></p>
+<p class="mb-4"><strong>Common Issues</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Duplicate content (filter parameters create URLs)</li>
+<li>Crawl budget waste (too many filter combinations)</li>
+<li>Thin content (filtered pages with few products)</li>
+</ul>
+<p class="mb-4"><strong>Solutions</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Solution</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Implementation</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">When to Use</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Noindex</td><td class="border border-gray-200 px-4 py-2">Add noindex to filtered pages</td><td class="border border-gray-200 px-4 py-2">Low-value filters</td></tr><tr><td class="border border-gray-200 px-4 py-2">Canonical</td><td class="border border-gray-200 px-4 py-2">Point to main category</td><td class="border border-gray-200 px-4 py-2">Similar content</td></tr><tr><td class="border border-gray-200 px-4 py-2">Robots.txt</td><td class="border border-gray-200 px-4 py-2">Block filter parameters</td><td class="border border-gray-200 px-4 py-2">Crawl budget</td></tr><tr><td class="border border-gray-200 px-4 py-2">AJAX</td><td class="border border-gray-200 px-4 py-2">Load filters without URL change</td><td class="border border-gray-200 px-4 py-2">Best UX + SEO</td></tr><tr><td class="border border-gray-200 px-4 py-2">Rel canonical</td><td class="border border-gray-200 px-4 py-2">Self-referencing on category</td><td class="border border-gray-200 px-4 py-2">Standard practice</td></tr></tbody></table></div>
+<strong>Recommended Approach</strong>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Best: AJAX filtering (no URL changes)
+Alternative: Canonical to main category
+Last resort: Noindex filtered pages
+</code></pre>
+<p class="mb-4"><strong>Category Page Template</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">H1: Men&#x27;s Running Shoes
+<p class="mb-4">[Intro: 100 words about category, key brands, use cases]</p>
+<p class="mb-4">[Filter/Sort Options]</p>
+<p class="mb-4">[Product Grid]</p>
+[Category Guide: 300-500 words]
+<ul class="list-disc list-inside my-4">
+<li>H2: How to Choose Running Shoes</li>
+<li>H2: Best Running Shoes by Type</li>
+<li>H2: Running Shoe FAQ</li>
+</ul>
+[Related Categories]
+</code></pre>
+<h2>3. Technical SEO for E-commerce Platforms</h2>
+<p class="mb-4">Platform-specific technical considerations:</p>
+<p class="mb-4"><strong>E-commerce Technical Checklist</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Area</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Check</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tool</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Site Architecture</td><td class="border border-gray-200 px-4 py-2">Max 3 clicks from homepage</td><td class="border border-gray-200 px-4 py-2">Manual</td></tr><tr><td class="border border-gray-200 px-4 py-2">URL Structure</td><td class="border border-gray-200 px-4 py-2">Clean, descriptive URLs</td><td class="border border-gray-200 px-4 py-2">Manual</td></tr><tr><td class="border border-gray-200 px-4 py-2">HTTPS</td><td class="border border-gray-200 px-4 py-2">SSL certificate valid</td><td class="border border-gray-200 px-4 py-2">Browser</td></tr><tr><td class="border border-gray-200 px-4 py-2">Mobile</td><td class="border border-gray-200 px-4 py-2">Mobile-friendly test</td><td class="border border-gray-200 px-4 py-2">Google</td></tr><tr><td class="border border-gray-200 px-4 py-2">Speed</td><td class="border border-gray-200 px-4 py-2">PageSpeed >50 (mobile)</td><td class="border border-gray-200 px-4 py-2">PageSpeed Insights</td></tr><tr><td class="border border-gray-200 px-4 py-2">Indexation</td><td class="border border-gray-200 px-4 py-2">Products/categories indexed</td><td class="border border-gray-200 px-4 py-2">Search Console</td></tr><tr><td class="border border-gray-200 px-4 py-2">Duplicate Content</td><td class="border border-gray-200 px-4 py-2">Canonicals implemented</td><td class="border border-gray-200 px-4 py-2">Screaming Frog</td></tr><tr><td class="border border-gray-200 px-4 py-2">Structured Data</td><td class="border border-gray-200 px-4 py-2">Product schema valid</td><td class="border border-gray-200 px-4 py-2">Rich Results Test</td></tr><tr><td class="border border-gray-200 px-4 py-2">Pagination</td><td class="border border-gray-200 px-4 py-2">Rel next/prev or canonical</td><td class="border border-gray-200 px-4 py-2">Manual</td></tr><tr><td class="border border-gray-200 px-4 py-2">XML Sitemap</td><td class="border border-gray-200 px-4 py-2">Products + categories included</td><td class="border border-gray-200 px-4 py-2">Search Console</td></tr></tbody></table></div>
+<strong>Common E-commerce Technical Issues</strong>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Issue</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Cause</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Fix</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Duplicate content</td><td class="border border-gray-200 px-4 py-2">URL parameters, filters</td><td class="border border-gray-200 px-4 py-2">Canonicals, noindex</td></tr><tr><td class="border border-gray-200 px-4 py-2">Orphan products</td><td class="border border-gray-200 px-4 py-2">No internal links</td><td class="border border-gray-200 px-4 py-2">Internal linking audit</td></tr><tr><td class="border border-gray-200 px-4 py-2">Slow product pages</td><td class="border border-gray-200 px-4 py-2">Large images, heavy themes</td><td class="border border-gray-200 px-4 py-2">Image optimization</td></tr><tr><td class="border border-gray-200 px-4 py-2">Crawl budget waste</td><td class="border border-gray-200 px-4 py-2">Filter combinations</td><td class="border border-gray-200 px-4 py-2">Robots.txt, noindex</td></tr><tr><td class="border border-gray-200 px-4 py-2">Missing schema</td><td class="border border-gray-200 px-4 py-2">No structured data</td><td class="border border-gray-200 px-4 py-2">Product schema</td></tr><tr><td class="border border-gray-200 px-4 py-2">Broken product URLs</td><td class="border border-gray-200 px-4 py-2">Discontinued products</td><td class="border border-gray-200 px-4 py-2">301 redirect</td></tr><tr><td class="border border-gray-200 px-4 py-2">Thin category pages</td><td class="border border-gray-200 px-4 py-2">No content</td><td class="border border-gray-200 px-4 py-2">Add category copy</td></tr></tbody></table></div>
+<strong>Site Architecture Best Practices</strong>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Homepage
+├── Category 1
+│   ├── Subcategory 1A
+│   │   └── Product 1A1
+│   └── Subcategory 1B
+└── Category 2
+    ├── Subcategory 2A
+    └── Subcategory 2B
+</code></pre>
+<p class="mb-4"><strong>Depth Guidelines</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Max 3 clicks from homepage to any product</li>
+<li>Breadcrumb navigation on all pages</li>
+<li>Internal links from high-authority pages</li>
+<li>XML sitemap includes all products</li>
+</ul>
+<p class="mb-4">Use <a href="#affiliate-link-placeholder" class="text-primary-600 hover:text-primary-700 underline">Screaming Frog</a> to audit e-commerce technical SEO.</p>
+<h2>4. Duplicate Content Issues (Manufacturer Descriptions)</h2>
+<p class="mb-4">Duplicate content kills e-commerce rankings:</p>
+<p class="mb-4"><strong>Duplicate Content Sources</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Source</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Prevalence</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Solution</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Manufacturer descriptions</td><td class="border border-gray-200 px-4 py-2">80%+ of stores</td><td class="border border-gray-200 px-4 py-2">Write unique copy</td></tr><tr><td class="border border-gray-200 px-4 py-2">Multi-size/color URLs</td><td class="border border-gray-200 px-4 py-2">Common</td><td class="border border-gray-200 px-4 py-2">Canonical tags</td></tr><tr><td class="border border-gray-200 px-4 py-2">Filter parameters</td><td class="border border-gray-200 px-4 py-2">Very common</td><td class="border border-gray-200 px-4 py-2">AJAX or noindex</td></tr><tr><td class="border border-gray-200 px-4 py-2">HTTP/HTTPS versions</td><td class="border border-gray-200 px-4 py-2">Common</td><td class="border border-gray-200 px-4 py-2">301 redirect</td></tr><tr><td class="border border-gray-200 px-4 py-2">WWW/non-WWW</td><td class="border border-gray-200 px-4 py-2">Common</td><td class="border border-gray-200 px-4 py-2">301 redirect</td></tr><tr><td class="border border-gray-200 px-4 py-2">Printer-friendly pages</td><td class="border border-gray-200 px-4 py-2">Less common</td><td class="border border-gray-200 px-4 py-2">Canonical or noindex</td></tr><tr><td class="border border-gray-200 px-4 py-2">Syndicated content</td><td class="border border-gray-200 px-4 py-2">Occasional</td><td class="border border-gray-200 px-4 py-2">Original content</td></tr></tbody></table></div>
+<strong>Manufacturer Description Problem</strong>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Problem: 1,000 stores sell same Nike shoes
+All 1,000 stores use Nike&#x27;s product description
+Google sees 1,000 identical pages
+Result: None rank well (duplicate content)
+Solution: Write unique descriptions for each product
+</code></pre>
+<p class="mb-4"><strong>Unique Content Tactics</strong></p>
+<p class="mb-4"><strong>Product Descriptions</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Write from customer perspective (benefits, not features)</li>
+<li>Include use cases (when/where to use)</li>
+<li>Add sizing/fit guidance</li>
+<li>Include comparison to similar products</li>
+<li>Add brand story (if relevant)</li>
+<li>Mention care instructions</li>
+</ul>
+<p class="mb-4"><strong>Content Formula</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Opening: Hook + main benefit (2 sentences)
+Features: 3-5 bullet points (key features)
+Details: Specifications, sizing, materials (paragraph)
+Use Cases: When/where to use (paragraph)
+Social Proof: Reviews, ratings mention
+CTA: Add to cart urgency
+</code></pre>
+<p class="mb-4"><strong>Scaling Unique Content</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Approach</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Cost</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Quality</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Scale</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">In-house writers</td><td class="border border-gray-200 px-4 py-2">High</td><td class="border border-gray-200 px-4 py-2">High</td><td class="border border-gray-200 px-4 py-2">Low-Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">Freelance writers</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">Medium-High</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">AI-assisted + human edit</td><td class="border border-gray-200 px-4 py-2">Low-Medium</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Template + customization</td><td class="border border-gray-200 px-4 py-2">Low</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">High</td></tr></tbody></table></div>
+<strong>Recommended</strong>: AI-assisted drafting with human editing for scale + quality balance.
+<h2>5. Review Schema and Rich Snippets</h2>
+<p class="mb-4">Reviews boost CTR and trust:</p>
+<p class="mb-4"><strong>Review Schema Types</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Schema</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Use Case</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Rich Snippet</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Product</td><td class="border border-gray-200 px-4 py-2">Individual products</td><td class="border border-gray-200 px-4 py-2">Stars + price</td></tr><tr><td class="border border-gray-200 px-4 py-2">AggregateRating</td><td class="border border-gray-200 px-4 py-2">Average rating</td><td class="border border-gray-200 px-4 py-2">Stars in SERP</td></tr><tr><td class="border border-gray-200 px-4 py-2">Review</td><td class="border border-gray-200 px-4 py-2">Individual reviews</td><td class="border border-gray-200 px-4 py-2">Review snippet</td></tr><tr><td class="border border-gray-200 px-4 py-2">FAQPage</td><td class="border border-gray-200 px-4 py-2">Product FAQs</td><td class="border border-gray-200 px-4 py-2">Expandable SERP</td></tr></tbody></table></div>
+<strong>Review Schema Implementation</strong>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-json">{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;Product&quot;,
+  &quot;name&quot;: &quot;Product Name&quot;,
+  &quot;aggregateRating&quot;: {
+    &quot;@type&quot;: &quot;AggregateRating&quot;,
+    &quot;ratingValue&quot;: &quot;4.5&quot;,
+    &quot;bestRating&quot;: &quot;5&quot;,
+    &quot;worstRating&quot;: &quot;1&quot;,
+    &quot;ratingCount&quot;: &quot;128&quot;,
+    &quot;reviewCount&quot;: &quot;89&quot;
+  },
+  &quot;review&quot;: [{
+    &quot;@type&quot;: &quot;Review&quot;,
+    &quot;reviewBody&quot;: &quot;Great product, highly recommend...&quot;,
+    &quot;author&quot;: {
+      &quot;@type&quot;: &quot;Person&quot;,
+      &quot;name&quot;: &quot;John D.&quot;
+    },
+    &quot;reviewRating&quot;: {
+      &quot;@type&quot;: &quot;Rating&quot;,
+      &quot;ratingValue&quot;: &quot;5&quot;,
+      &quot;bestRating&quot;: &quot;5&quot;,
+      &quot;worstRating&quot;: &quot;1&quot;
+    }
+  }]
+}
+</code></pre>
+<p class="mb-4"><strong>Review Rich Snippet Benefits</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Benefit</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">CTR Increase</td><td class="border border-gray-200 px-4 py-2">20-35% higher</td></tr><tr><td class="border border-gray-200 px-4 py-2">Trust Signal</td><td class="border border-gray-200 px-4 py-2">Stars indicate quality</td></tr><tr><td class="border border-gray-200 px-4 py-2">SERP Real Estate</td><td class="border border-gray-200 px-4 py-2">More space in results</td></tr><tr><td class="border border-gray-200 px-4 py-2">Mobile Visibility</td><td class="border border-gray-200 px-4 py-2">Stars prominent on mobile</td></tr></tbody></table></div>
+<strong>Review Generation Best Practices</strong>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tactic</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Implementation</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Conversion</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Post-purchase email</td><td class="border border-gray-200 px-4 py-2">Send 7 days after delivery</td><td class="border border-gray-200 px-4 py-2">15-25%</td></tr><tr><td class="border border-gray-200 px-4 py-2">SMS review request</td><td class="border border-gray-200 px-4 py-2">Send 3-5 days after delivery</td><td class="border border-gray-200 px-4 py-2">20-30%</td></tr><tr><td class="border border-gray-200 px-4 py-2">Incentive (future discount)</td><td class="border border-gray-200 px-4 py-2">Offer 10% off next purchase</td><td class="border border-gray-200 px-4 py-2">25-35%</td></tr><tr><td class="border border-gray-200 px-4 py-2">Review widget on site</td><td class="border border-gray-200 px-4 py-2">Make leaving reviews easy</td><td class="border border-gray-200 px-4 py-2">10-15%</td></tr><tr><td class="border border-gray-200 px-4 py-2">Follow-up sequence</td><td class="border border-gray-200 px-4 py-2">2-3 touchpoints max</td><td class="border border-gray-200 px-4 py-2">30-40%</td></tr></tbody></table></div>
+Use <a href="#affiliate-link-placeholder" class="text-primary-600 hover:text-primary-700 underline">Yotpo</a> or <a href="#affiliate-link-placeholder" class="text-primary-600 hover:text-primary-700 underline">Judge.me</a> for e-commerce review management.
+<h2>6. Internal Linking for E-commerce Sites</h2>
+<p class="mb-4">Internal links distribute authority to products:</p>
+<p class="mb-4"><strong>E-commerce Internal Linking Strategy</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Link Type</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Placement</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Category → Product</td><td class="border border-gray-200 px-4 py-2">Category page product grid</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Product → Related</td><td class="border border-gray-200 px-4 py-2">"Related products" section</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Homepage → Category</td><td class="border border-gray-200 px-4 py-2">Featured categories</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Blog → Product</td><td class="border border-gray-200 px-4 py-2">Contextual product links</td><td class="border border-gray-200 px-4 py-2">Medium-High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Breadcrumb</td><td class="border border-gray-200 px-4 py-2">Site-wide navigation</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr></tbody></table></div>
+<strong>Internal Linking Best Practices</strong>
+<p class="mb-4"><strong>Product Pages</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Link to category page (breadcrumb)</li>
+<li>Link to related products (3-5)</li>
+<li>Link to complementary products (cross-sell)</li>
+<li>Link to buying guides (informational)</li>
+</ul>
+<p class="mb-4"><strong>Category Pages</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Link to parent category</li>
+<li>Link to sibling categories</li>
+<li>Link to featured products</li>
+<li>Link to category guides</li>
+</ul>
+<p class="mb-4"><strong>Homepage</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Link to main categories</li>
+<li>Link to featured collections</li>
+<li>Link to bestsellers</li>
+<li>Link to seasonal promotions</li>
+</ul>
+<p class="mb-4"><strong>Internal Link Audit</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Process:
+<ol class="list-decimal list-inside my-4">
+<li>Crawl site (Screaming Frog)</li>
+<li>Identify orphan products (no internal links)</li>
+<li>Find high-DA pages (link from these)</li>
+<li>Add contextual links in blog content</li>
+<li>Fix broken internal links</li>
+<li>Ensure logical silo structure</li>
+</ol>
+</code></pre>
+<p class="mb-4"><strong>Orphan Product Fix</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Problem: Products with no internal links
+Solution:
+<ul class="list-disc list-inside my-4">
+<li>Add from category pages</li>
+<li>Add from related products</li>
+<li>Add from blog content</li>
+<li>Add from homepage (bestsellers)</li>
+<li>Include in XML sitemap</li>
+</ul>
+</code></pre>
+<h2>7. Site Architecture and Navigation SEO</h2>
+<p class="mb-4">Structure for users and crawlers:</p>
+<p class="mb-4"><strong>E-commerce Information Architecture</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Homepage (Level 0)
+├── Main Category 1 (Level 1)
+│   ├── Subcategory 1A (Level 2)
+│   │   └── Product 1A1 (Level 3)
+│   └── Subcategory 1B (Level 2)
+└── Main Category 2 (Level 1)
+    ├── Subcategory 2A (Level 2)
+    └── Subcategory 2B (Level 2)
+        └── Product 2B1 (Level 3)
+</code></pre>
+<p class="mb-4"><strong>Navigation Best Practices</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Element</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Best Practice</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Why</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Main Navigation</td><td class="border border-gray-200 px-4 py-2">5-7 main categories</td><td class="border border-gray-200 px-4 py-2">User-friendly</td></tr><tr><td class="border border-gray-200 px-4 py-2">Breadcrumbs</td><td class="border border-gray-200 px-4 py-2">All pages</td><td class="border border-gray-200 px-4 py-2">UX + SEO</td></tr><tr><td class="border border-gray-200 px-4 py-2">Footer Links</td><td class="border border-gray-200 px-4 py-2">Key categories, policies</td><td class="border border-gray-200 px-4 py-2">Crawlability</td></tr><tr><td class="border border-gray-200 px-4 py-2">Mega Menus</td><td class="border border-gray-200 px-4 py-2">Large catalogs</td><td class="border border-gray-200 px-4 py-2">Organization</td></tr><tr><td class="border border-gray-200 px-4 py-2">Search</td><td class="border border-gray-200 px-4 py-2">Prominent, functional</td><td class="border border-gray-200 px-4 py-2">User intent</td></tr><tr><td class="border border-gray-200 px-4 py-2">Mobile Navigation</td><td class="border border-gray-200 px-4 py-2">Hamburger or tab bar</td><td class="border border-gray-200 px-4 py-2">Mobile UX</td></tr></tbody></table></div>
+<strong>URL Structure Best Practices</strong>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Good: example.com/mens-running-shoes/nike-air-max-90
+Bad: example.com/product.php?id=12345&amp;cat=7
+Good: example.com/categories/running-shoes
+Bad: example.com/cat/7
+</code></pre>
+<p class="mb-4"><strong>URL Guidelines</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Descriptive, keyword-rich</li>
+<li>Hyphens (not underscores)</li>
+<li>Lowercase only</li>
+<li>No session IDs</li>
+<li>Include category path (optional)</li>
+<li>Keep concise (max 5-6 segments)</li>
+</ul>
+<h2>8. E-commerce Link Building Strategies</h2>
+<p class="mb-4">Build authority for product and category pages:</p>
+<p class="mb-4"><strong>E-commerce Link Opportunities</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Source</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Difficulty</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Authority</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">E-commerce Relevance</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Product reviews (bloggers)</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">Medium-High</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Gift guides</td><td class="border border-gray-200 px-4 py-2">Medium (seasonal)</td><td class="border border-gray-200 px-4 py-2">Medium-High</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Industry roundups</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Supplier/distributor</td><td class="border border-gray-200 px-4 py-2">Easy</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Local business (brick+mortar)</td><td class="border border-gray-200 px-4 py-2">Easy</td><td class="border border-gray-200 px-4 py-2">Low-Medium</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">Product comparisons</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">Medium-High</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Broken link building</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">Varies</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr></tbody></table></div>
+<strong>Link Building Tactics for E-commerce</strong>
+<p class="mb-4"><strong>Product Review Outreach</strong></p>
+<ol class="list-decimal list-inside my-4">
+<li>Identify product review bloggers in niche</li>
+<li>Send free product for review</li>
+<li>Follow up for review publication</li>
+<li>Earn editorial link from review</li>
+</ol>
+<p class="mb-4"><strong>Gift Guide Outreach</strong></p>
+<ol class="list-decimal list-inside my-4">
+<li>Find gift guide publishers (seasonal)</li>
+<li>Pitch products as gift ideas</li>
+<li>Provide product images + descriptions</li>
+<li>Earn link when published</li>
+</ol>
+<p class="mb-4"><strong>Competitor Backlink Analysis</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Process:
+<ol class="list-decimal list-inside my-4">
+<li>Analyze competitor backlinks (Ahrefs)</li>
+<li>Identify product/gift guide links</li>
+<li>Reach out to same publishers</li>
+<li>Pitch your products</li>
+<li>Earn similar links</li>
+</ol>
+</code></pre>
+<p class="mb-4"><strong>Linkable E-commerce Assets</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Asset</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Link Potential</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Effort</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Original product research</td><td class="border border-gray-200 px-4 py-2">High</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Industry statistics</td><td class="border border-gray-200 px-4 py-2">High</td><td class="border border-gray-200 px-4 py-2">Medium-High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Buying guides</td><td class="border border-gray-200 px-4 py-2">Medium-High</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">Product comparisons</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">Gift guides</td><td class="border border-gray-200 px-4 py-2">Medium (seasonal)</td><td class="border border-gray-200 px-4 py-2">Low-Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">How-to content (using products)</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr></tbody></table></div>
+Use <a href="#affiliate-link-placeholder" class="text-primary-600 hover:text-primary-700 underline">Ahrefs</a> for e-commerce competitor backlink analysis.
+<h2>9. Platform-Specific SEO (Shopify, WooCommerce, Magento, BigCommerce)</h2>
+<p class="mb-4">Each platform has unique SEO considerations:</p>
+<p class="mb-4"><strong>Shopify SEO</strong></p>
+<p class="mb-4"><strong>Strengths</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Mobile-responsive themes</li>
+<li>Built-in SSL (HTTPS)</li>
+<li>Automatic sitemap.xml</li>
+<li>Clean URL structure</li>
+<li>App ecosystem (SEO apps)</li>
+</ul>
+<p class="mb-4"><strong>Weaknesses</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Limited URL customization</li>
+<li>Blog functionality basic</li>
+<li>Duplicate content (collection filters)</li>
+<li>Liquid templating learning curve</li>
+</ul>
+<p class="mb-4"><strong>Shopify SEO Apps</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">App</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Purpose</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Pricing</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Plug in SEO</td><td class="border border-gray-200 px-4 py-2">Audit + fixes</td><td class="border border-gray-200 px-4 py-2">From $20/mo</td></tr><tr><td class="border border-gray-200 px-4 py-2">SEO Manager</td><td class="border border-gray-200 px-4 py-2">Meta tags, sitemaps</td><td class="border border-gray-200 px-4 py-2">From $20/mo</td></tr><tr><td class="border border-gray-200 px-4 py-2">Smart SEO</td><td class="border border-gray-200 px-4 py-2">Automated optimization</td><td class="border border-gray-200 px-4 py-2">From $10/m</td></tr><tr><td class="border border-gray-200 px-4 py-2">Avada SEO</td><td class="border border-gray-200 px-4 py-2">Image optimization</td><td class="border border-gray-200 px-4 py-2">From $9/mo</td></tr></tbody></table></div>
+<strong>Shopify Best Practices</strong>
+<ul class="list-disc list-inside my-4">
+<li>Install SEO app for automation</li>
+<li>Optimize product titles/descriptions</li>
+<li>Fix duplicate collection URLs</li>
+<li>Add product schema (app or manual)</li>
+<li>Optimize images (compress, alt text)</li>
+<li>Enable blog for content marketing</li>
+</ul>
+<p class="mb-4"><strong>WooCommerce SEO</strong></p>
+<p class="mb-4"><strong>Strengths</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>WordPress foundation (strong SEO)</li>
+<li>Full URL control</li>
+<li>Yoast/RankMath integration</li>
+<li>Extensive plugin ecosystem</li>
+<li>Complete content control</li>
+</ul>
+<p class="mb-4"><strong>Weaknesses</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Requires WordPress knowledge</li>
+<li>Plugin conflicts possible</li>
+<li>Performance varies by hosting</li>
+<li>Maintenance responsibility</li>
+</ul>
+<p class="mb-4"><strong>WooCommerce SEO Plugins</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Plugin</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Purpose</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Pricing</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Yoast SEO</td><td class="border border-gray-200 px-4 py-2">On-page optimization</td><td class="border border-gray-200 px-4 py-2">Free/$99/yr</td></tr><tr><td class="border border-gray-200 px-4 py-2">RankMath</td><td class="border border-gray-200 px-4 py-2">All-in-one SEO</td><td class="border border-gray-200 px-4 py-2">Free/$59/yr</td></tr><tr><td class="border border-gray-200 px-4 py-2">WooCommerce SEO</td><td class="border border-gray-200 px-4 py-2">Product schema</td><td class="border border-gray-200 px-4 py-2">From $49/yr</td></tr><tr><td class="border border-gray-200 px-4 py-2">WP Rocket</td><td class="border border-gray-200 px-4 py-2">Speed optimization</td><td class="border border-gray-200 px-4 py-2">From $59/yr</td></tr></tbody></table></div>
+<strong>WooCommerce Best Practices</strong>
+<ul class="list-disc list-inside my-4">
+<li>Install Yoast or RankMath</li>
+<li>Configure product schema</li>
+<li>Optimize category pages</li>
+<li>Enable breadcrumbs</li>
+<li>Implement caching (speed)</li>
+<li>Use CDN for images</li>
+</ul>
+<p class="mb-4"><strong>Magento SEO</strong></p>
+<p class="mb-4"><strong>Strengths</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Enterprise-grade features</li>
+<li>Full customization</li>
+<li>Multi-store support</li>
+<li>Advanced catalog management</li>
+</ul>
+<p class="mb-4"><strong>Weaknesses</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Complex development</li>
+<li>Expensive hosting</li>
+<li>Steep learning curve</li>
+<li>SEO requires developer</li>
+</ul>
+<p class="mb-4"><strong>Magento Best Practices</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Enable XML sitemap</li>
+<li>Configure canonical tags</li>
+<li>Optimize URL structure</li>
+<li>Implement structured data</li>
+<li>Enable HTTPS</li>
+<li>Optimize site speed (caching, CDN)</li>
+</ul>
+<p class="mb-4"><strong>BigCommerce SEO</strong></p>
+<p class="mb-4"><strong>Strengths</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Built-in SEO features</li>
+<li>Automatic sitemap</li>
+<li>Clean URL structure</li>
+<li>Mobile-responsive themes</li>
+<li>Fast hosting (SaaS)</li>
+</ul>
+<p class="mb-4"><strong>Weaknesses</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Less flexible than WooCommerce</li>
+<li>App costs add up</li>
+<li>Limited content features</li>
+<li>Template restrictions</li>
+</ul>
+<p class="mb-4"><strong>BigCommerce Best Practices</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Enable built-in SEO features</li>
+<li>Optimize product pages</li>
+<li>Add blog for content marketing</li>
+<li>Implement product schema</li>
+<li>Optimize images</li>
+<li>Use built-in 301 redirects</li>
+</ul>
+<p class="mb-4"><strong>Platform Comparison</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Platform</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">SEO Ease</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Flexibility</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Cost</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Best For</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Shopify</td><td class="border border-gray-200 px-4 py-2">High</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">$29-299/m</td><td class="border border-gray-200 px-4 py-2">Small-medium stores</td></tr><tr><td class="border border-gray-200 px-4 py-2">WooCommerce</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">High</td><td class="border border-gray-200 px-4 py-2">Variable</td><td class="border border-gray-200 px-4 py-2">WordPress users</td></tr><tr><td class="border border-gray-200 px-4 py-2">Magento</td><td class="border border-gray-200 px-4 py-2">Low</td><td class="border border-gray-200 px-4 py-2">Very High</td><td class="border border-gray-200 px-4 py-2">High</td><td class="border border-gray-200 px-4 py-2">Enterprise</td></tr><tr><td class="border border-gray-200 px-4 py-2">BigCommerce</td><td class="border border-gray-200 px-4 py-2">High</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">$29-299/m</td><td class="border border-gray-200 px-4 py-2">Growing stores</td></tr></tbody></table></div>
+Use <a href="#affiliate-link-placeholder" class="text-primary-600 hover:text-primary-700 underline">Yoast SEO</a> for WooCommerce optimization.
+<h2>10. Conversion-Focused SEO (Not Just Traffic)</h2>
+<p class="mb-4">E-commerce SEO drives revenue, not just traffic:</p>
+<p class="mb-4"><strong>Traffic vs. Revenue Focus</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Metric</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Traffic Focus</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Revenue Focus</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Primary KPI</td><td class="border border-gray-200 px-4 py-2">Organic sessions</td><td class="border border-gray-200 px-4 py-2">Organic revenue</td></tr><tr><td class="border border-gray-200 px-4 py-2">Keyword Target</td><td class="border border-gray-200 px-4 py-2">High volume</td><td class="border border-gray-200 px-4 py-2">High commercial intent</td></tr><tr><td class="border border-gray-200 px-4 py-2">Content Priority</td><td class="border border-gray-200 px-4 py-2">Informational</td><td class="border border-gray-200 px-4 py-2">Transactional</td></tr><tr><td class="border border-gray-200 px-4 py-2">Optimization</td><td class="border border-gray-200 px-4 py-2">Rankings</td><td class="border border-gray-200 px-4 py-2">Conversion rate</td></tr><tr><td class="border border-gray-200 px-4 py-2">Reporting</td><td class="border border-gray-200 px-4 py-2">Traffic growth</td><td class="border border-gray-200 px-4 py-2">Revenue attribution</td></tr></tbody></table></div>
+<strong>Commercial Intent Keywords</strong>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Intent Signal</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Example</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Priority</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Buy</td><td class="border border-gray-200 px-4 py-2">"buy running shoes"</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Price</td><td class="border border-gray-200 px-4 py-2">"running shoes price"</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Discount</td><td class="border border-gray-200 px-4 py-2">"running shoes discount"</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Review</td><td class="border border-gray-200 px-4 py-2">"running shoes review"</td><td class="border border-gray-200 px-4 py-2">Medium-High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Best</td><td class="border border-gray-200 px-4 py-2">"best running shoes"</td><td class="border border-gray-200 px-4 py-2">Medium-High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Compare</td><td class="border border-gray-200 px-4 py-2">"nike vs adidas running shoes"</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">Info</td><td class="border border-gray-200 px-4 py-2">"how to tie running shoes"</td><td class="border border-gray-200 px-4 py-2">Low</td></tr></tbody></table></div>
+<strong>Product Page CRO + SEO</strong>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Element</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">SEO Impact</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">CRO Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Title tag</td><td class="border border-gray-200 px-4 py-2">High</td><td class="border border-gray-200 px-4 py-2">Medium</td></tr><tr><td class="border border-gray-200 px-4 py-2">Product images</td><td class="border border-gray-200 px-4 py-2">Low</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Description</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Reviews</td><td class="border border-gray-200 px-4 py-2">Medium (schema)</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Price display</td><td class="border border-gray-200 px-4 py-2">Low</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Availability</td><td class="border border-gray-200 px-4 py-2">Medium (schema)</td><td class="border border-gray-200 px-4 py-2">High</td></tr><tr><td class="border border-gray-200 px-4 py-2">Add to cart</td><td class="border border-gray-200 px-4 py-2">Low</td><td class="border border-gray-200 px-4 py-2">Critical</td></tr><tr><td class="border border-gray-200 px-4 py-2">Trust badges</td><td class="border border-gray-200 px-4 py-2">Low</td><td class="border border-gray-200 px-4 py-2">High</td></tr></tbody></table></div>
+<strong>Revenue Attribution</strong>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Organic Revenue = Organic Sessions × Conversion Rate × Average Order Value
+Example:
+<ul class="list-disc list-inside my-4">
+<li>Monthly Organic Sessions: 10,000</li>
+<li>Conversion Rate: 2.5%</li>
+<li>Average Order Value: $75</li>
+<li>Monthly Organic Revenue: $18,750</li>
+<li>Annual Organic Revenue: $225,000</li>
+</ul>
+</code></pre>
+<p class="mb-4"><strong>E-commerce SEO Dashboard</strong></p>
+<p class="mb-4"><strong>Metrics to Track</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Organic sessions (trend)</li>
+<li>Organic conversion rate</li>
+<li>Organic revenue (GA4 e-commerce)</li>
+<li>Top product pages (organic)</li>
+<li>Top category pages (organic)</li>
+<li>Branded vs. non-branded organic</li>
+<li>Product keyword rankings</li>
+<li>Category keyword rankings</li>
+</ul>
+<h2>E-commerce SEO Checklist</h2>
+<p class="mb-4"><strong>Product Pages</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>✅ Unique product title (brand + name + features)</li>
+<li>✅ Unique product description (not manufacturer copy)</li>
+<li>✅ Product schema markup</li>
+<li>✅ Optimized images (WebP, alt text, compression)</li>
+<li>✅ Reviews enabled + schema</li>
+<li>✅ Price + availability displayed</li>
+<li>✅ Internal links (related products, categories)</li>
+<li>✅ Add to cart prominent</li>
+<li>✅ Mobile-friendly</li>
+<li>✅ Page speed optimized</li>
+</ul>
+<p class="mb-4"><strong>Category Pages</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>✅ Unique category content (100-300 words)</li>
+<li>✅ Optimized title tag + H1</li>
+<li>✅ Filter SEO (canonical or AJAX)</li>
+<li>✅ Product grid optimized</li>
+<li>✅ Internal links (parent, sibling categories)</li>
+<li>✅ Breadcrumb navigation</li>
+<li>✅ Pagination handled correctly</li>
+</ul>
+<p class="mb-4"><strong>Technical</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>✅ HTTPS enabled</li>
+<li>✅ XML sitemap (products + categories)</li>
+<li>✅ Robots.txt configured</li>
+<li>✅ Site architecture (max 3 clicks)</li>
+<li>✅ No orphan products</li>
+<li>✅ Duplicate content resolved</li>
+<li>✅ Mobile-friendly</li>
+<li>✅ Core Web Vitals passing</li>
+</ul>
+<h2>Conclusion</h2>
+<p class="mb-4">E-commerce SEO requires product page optimization, category structure, technical SEO, and platform-specific tactics. Focus on unique product descriptions (never manufacturer copy), implement product schema, optimize for commercial-intent keywords, and track revenue—not just traffic.</p>
+<p class="mb-4">Start with product and category optimization, then expand to technical SEO and link building. E-commerce SEO compounds—each optimized product page builds authority and drives long-term organic revenue.</p>
+<hr class="my-8 border-gray-200">
+<p class="mb-4"><strong>Ready to dominate e-commerce search and drive organic sales?</strong></p>
+<p class="mb-4">Our e-commerce SEO audit identifies product page optimization gaps, technical issues, and revenue opportunities. Get a complete roadmap to organic growth.</p>
+<p class="mb-4"><a href="#affiliate-link-placeholder" class="text-primary-600 hover:text-primary-700 underline"><strong>Get Your Free E-commerce SEO Audit</strong></a></p>
+<p class="mb-4">First 5 audits this month include product schema implementation for top 20 products ($800 value).</p>
+<hr class="my-8 border-gray-200">
+<p class="mb-4"><em>Last Updated: March 14, 2026</em></p>
+            </div>
+        </div>
+    </article>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-primary-500 to-accent-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+                Ready to Implement These Strategies?
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Get a professional website with built-in SEO that implements these best practices from day one. Start ranking higher today.
+            </p>
+            <a href="/#contact" class="inline-block bg-white text-primary-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-2xl">
+                Get Your Free Mockup
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <span class="text-4xl">⚡</span>
+                        <span class="text-2xl font-bold">EnergizedSEO</span>
+                    </div>
+                    <p class="text-gray-400 max-w-md">Professional websites with built-in SEO for local businesses. Get more customers on autopilot.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="/#process" class="hover:text-white transition-colors">How It Works</a></li>
+                        <li><a href="/blog" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="/#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/#contact" class="hover:text-white transition-colors">Get Free Mockup</a></li>
+                        <li><a href="/#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 EnergizedSEO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

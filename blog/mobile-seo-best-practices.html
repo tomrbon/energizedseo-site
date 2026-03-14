@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master mobile SEO with this comprehensive guide covering mobile-first indexing, responsive design, Core Web Vitals, and mobile technical optimization.">
+    <title>Mobile SEO Best Practices: Complete Guide to Mobile-First Optimization in 2026 | EnergizedSEO</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#fef7ee',
+                            100: '#feefdc',
+                            200: '#fdd9b0',
+                            300: '#fbb975',
+                            400: '#f78d2f',
+                            500: '#f36f0b',
+                            600: '#e05705',
+                            700: '#b94209',
+                            800: '#94360e',
+                            900: '#782f0e',
+                        },
+                        accent: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <style>
+        .prose h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1.5rem; color: #1f2937; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #1f2937; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; color: #1f2937; }
+        .prose h4 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1f2937; }
+        .prose p { margin-bottom: 1.25rem; line-height: 1.75; color: #374151; }
+        .prose a { color: #f36f0b; text-decoration: underline; }
+        .prose a:hover { color: #e05705; }
+        .prose ul, .prose ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .prose li { margin-bottom: 0.5rem; }
+        .prose blockquote { border-left: 4px solid #f36f0b; padding-left: 1rem; font-style: italic; background: #f9fafb; padding: 1rem; margin: 1.5rem 0; }
+        .prose code { background: #f3f4f6; padding: 0.2rem 0.4rem; border-radius: 0.25rem; font-size: 0.875em; }
+        .prose pre { background: #f3f4f6; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin: 1.5rem 0; }
+        .prose pre code { background: transparent; padding: 0; }
+        .prose img { max-width: 100%; height: auto; border-radius: 0.5rem; margin: 1.5rem 0; }
+        .prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+        .prose th, .prose td { border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left; }
+        .prose th { background: #f9fafb; font-weight: 600; }
+    </style>
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50" role="navigation" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <a href="/" class="flex items-center space-x-3">
+                        <span class="text-4xl" aria-hidden="true">⚡</span>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">EnergizedSEO</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/#features" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">Features</a>
+                    <a href="/#process" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">How It Works</a>
+                    <a href="/blog" class="text-primary-600 font-semibold">Blog</a>
+                    <a href="/#pricing" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">Pricing</a>
+                    <a href="/#testimonials" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">Results</a>
+                    <a href="/#contact" class="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-3 rounded-full font-semibold hover:from-primary-600 hover:to-primary-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Get Free Mockup</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 py-4 space-y-3">
+                <a href="/#features" class="block text-gray-600 hover:text-primary-600 py-2 font-medium">Features</a>
+                <a href="/#process" class="block text-gray-600 hover:text-primary-600 py-2 font-medium">How It Works</a>
+                <a href="/blog" class="block text-primary-600 font-semibold">Blog</a>
+                <a href="/#pricing" class="block text-gray-600 hover:text-primary-600 py-2 font-medium">Pricing</a>
+                <a href="/#testimonials" class="block text-gray-600 hover:text-primary-600 py-2 font-medium">Results</a>
+                <a href="/#contact" class="block bg-gradient-to-r from-primary-500 to-primary-600 text-white text-center px-6 py-3 rounded-full font-semibold">Get Free Mockup</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-primary-50 via-white to-accent-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex flex-wrap justify-center gap-2 mb-6">
+                    <span class="px-3 py-1 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full">Mobile SEO</span> <span class="px-3 py-1 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full">Technical SEO</span> 
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+                    Mobile SEO Best Practices: Complete Guide to Mobile-First Optimization in 2026
+                </h1>
+                <p class="text-xl text-gray-600 leading-relaxed mb-4">
+                    Master mobile SEO with this comprehensive guide covering mobile-first indexing, responsive design, Core Web Vitals, and mobile technical optimization.
+                </p>
+                <div class="text-sm text-gray-500">
+                    Published: 2026-03-14
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose prose-lg max-w-none">
+                <h1>Mobile SEO Best Practices: Complete Guide to Mobile-First Optimization in 2026</h1>
+<p class="mb-4">Mobile is no longer the future—it's the present. With mobile-first indexing, Google primarily uses your mobile version for ranking and indexing. This guide covers everything you need to optimize for mobile search success.</p>
+<p class="mb-4"><img src="/images/mobile-seo-best-practices.jpg" alt="Mobile SEO Optimization" class="max-w-full h-auto rounded-lg my-4">
+<em>Figure 1: Mobile SEO optimization checklist showing key ranking factors</em></p>
+<h2>Mobile-First Indexing Explained</h2>
+<p class="mb-4">Google indexes the mobile version first:</p>
+<p class="mb-4"><strong>What Is Mobile-First Indexing?</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Google crawls and indexes the mobile version of your site</li>
+<li>Desktop version is secondary (if mobile doesn't exist)</li>
+<li>Rankings based on mobile content and signals</li>
+<li>All new sites are mobile-first by default</li>
+</ul>
+<p class="mb-4"><strong>Mobile-First Indexing Timeline</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Date</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Milestone</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">2016</td><td class="border border-gray-200 px-4 py-2">Mobile-first indexing announced</td></tr><tr><td class="border border-gray-200 px-4 py-2">2018</td><td class="border border-gray-200 px-4 py-2">Expanded to 50% of sites</td></tr><tr><td class="border border-gray-200 px-4 py-2">2019</td><td class="border border-gray-200 px-4 py-2">Default for all new sites</td></tr><tr><td class="border border-gray-200 px-4 py-2">2020</td><td class="border border-gray-200 px-4 py-2">Completed rollout (all sites)</td></tr><tr><td class="border border-gray-200 px-4 py-2">2026</td><td class="border border-gray-200 px-4 py-2">Standard for all indexing</td></tr></tbody></table></div>
+<strong>Mobile-First Implications</strong>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Factor</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Desktop-First</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Mobile-First</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Content Indexed</td><td class="border border-gray-200 px-4 py-2">Desktop version</td><td class="border border-gray-200 px-4 py-2">Mobile version</td></tr><tr><td class="border border-gray-200 px-4 py-2">Rankings Based On</td><td class="border border-gray-200 px-4 py-2">Desktop signals</td><td class="border border-gray-200 px-4 py-2">Mobile signals</td></tr><tr><td class="border border-gray-200 px-4 py-2">Structured Data</td><td class="border border-gray-200 px-4 py-2">Desktop markup</td><td class="border border-gray-200 px-4 py-2">Mobile markup</td></tr><tr><td class="border border-gray-200 px-4 py-2">Internal Links</td><td class="border border-gray-200 px-4 py-2">Desktop links</td><td class="border border-gray-200 px-4 py-2">Mobile links</td></tr><tr><td class="border border-gray-200 px-4 py-2">Metadata</td><td class="border border-gray-200 px-4 py-2">Desktop titles/meta</td><td class="border border-gray-200 px-4 py-2">Mobile titles/meta</td></tr></tbody></table></div>
+<strong>Mobile-First Checklist</strong>
+<ul class="list-disc list-inside my-4">
+<li>✅ Mobile version contains same content as desktop</li>
+<li>✅ Mobile structured data matches desktop</li>
+<li>✅ Mobile metadata (titles, meta descriptions) present</li>
+<li>✅ Mobile internal linking structure intact</li>
+<li>✅ Mobile robots.txt allows crawling</li>
+<li>✅ Mobile site verified in Search Console</li>
+</ul>
+<h2>1. Responsive Design vs. AMP vs. Dynamic Serving</h2>
+<p class="mb-4">Choose the right mobile approach:</p>
+<p class="mb-4"><strong>Responsive Design</strong></p>
+<p class="mb-4"><strong>Overview</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Single URL serves all devices</li>
+<li>CSS media queries adjust layout</li>
+<li>Google's recommended approach</li>
+<li>Easiest to maintain</li>
+</ul>
+<p class="mb-4"><strong>Pros</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Advantage</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Single URL</td><td class="border border-gray-200 px-4 py-2">No duplicate content issues</td></tr><tr><td class="border border-gray-200 px-4 py-2">Easy maintenance</td><td class="border border-gray-200 px-4 py-2">One codebase</td></tr><tr><td class="border border-gray-200 px-4 py-2">Link equity consolidated</td><td class="border border-gray-200 px-4 py-2">All links to one URL</td></tr><tr><td class="border border-gray-200 px-4 py-2">Google recommends</td><td class="border border-gray-200 px-4 py-2">Preferred by search engines</td></tr><tr><td class="border border-gray-200 px-4 py-2">Cost-effective</td><td class="border border-gray-200 px-4 py-2">Lower development cost</td></tr></tbody></table></div>
+<strong>Cons</strong>
+<ul class="list-disc list-inside my-4">
+<li>Slower than AMP (initially)</li>
+<li>Requires careful performance optimization</li>
+<li>May not match native app experience</li>
+</ul>
+<p class="mb-4"><strong>Best For</strong>: Most websites, blogs, e-commerce</p>
+<p class="mb-4"><strong>AMP (Accelerated Mobile Pages)</strong></p>
+<p class="mb-4"><strong>Overview</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Stripped-down HTML for speed</li>
+<li>Separate AMP URLs</li>
+<li>Lightning bolt icon in SERPs</li>
+<li>Google cache delivery</li>
+</ul>
+<p class="mb-4"><strong>Pros</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Advantage</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Extremely fast</td><td class="border border-gray-200 px-4 py-2">Near-instant loading</td></tr><tr><td class="border border-gray-200 px-4 py-2">SERP feature</td><td class="border border-gray-200 px-4 py-2">AMP carousel placement</td></tr><tr><td class="border border-gray-200 px-4 py-2">Reduced bounce</td><td class="border border-gray-200 px-4 py-2">Speed improves engagement</td></tr><tr><td class="border border-gray-200 px-4 py-2">Cache delivery</td><td class="border border-gray-200 px-4 py-2">Google serves from cache</td></tr></tbody></table></div>
+<strong>Cons</strong>
+<ul class="list-disc list-inside my-4">
+<li>Separate URL structure (canonical + AMP)</li>
+<li>Limited design flexibility</li>
+<li>Development complexity</li>
+<li>Google de-emphasizing AMP (2023+)</li>
+</ul>
+<p class="mb-4"><strong>Best For</strong>: News publishers, content sites (declining relevance)</p>
+<p class="mb-4"><strong>Dynamic Serving</strong></p>
+<p class="mb-4"><strong>Overview</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Same URL, different HTML by device</li>
+<li>User-Agent detection</li>
+<li>Server-side rendering</li>
+<li>Vary HTTP header required</li>
+</ul>
+<p class="mb-4"><strong>Pros</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Advantage</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Optimized per device</td><td class="border border-gray-200 px-4 py-2">Best UX per device</td></tr><tr><td class="border border-gray-200 px-4 py-2">Single URL</td><td class="border border-gray-200 px-4 py-2">No duplicate content</td></tr><tr><td class="border border-gray-200 px-4 py-2">Full design control</td><td class="border border-gray-200 px-4 py-2">No AMP limitations</td></tr></tbody></table></div>
+<strong>Cons</strong>
+<ul class="list-disc list-inside my-4">
+<li>Complex development</li>
+<li>User-Agent detection errors</li>
+<li>Higher maintenance cost</li>
+<li>Risk of cloaking penalties</li>
+</ul>
+<p class="mb-4"><strong>Best For</strong>: Large enterprises with dev resources</p>
+<p class="mb-4"><strong>Comparison: Mobile Approaches</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Approach</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Speed</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Maintenance</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">SEO Risk</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Google Preference</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Responsive</td><td class="border border-gray-200 px-4 py-2">Good</td><td class="border border-gray-200 px-4 py-2">Easy</td><td class="border border-gray-200 px-4 py-2">Low</td><td class="border border-gray-200 px-4 py-2">Preferred</td></tr><tr><td class="border border-gray-200 px-4 py-2">AMP</td><td class="border border-gray-200 px-4 py-2">Excellent</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">Low-Medium</td><td class="border border-gray-200 px-4 py-2">Neutral</td></tr><tr><td class="border border-gray-200 px-4 py-2">Dynamic Serving</td><td class="border border-gray-200 px-4 py-2">Excellent</td><td class="border border-gray-200 px-4 py-2">Hard</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">Accepted</td></tr></tbody></table></div>
+Use responsive design for most sites—it's Google's recommended approach.
+<h2>2. Mobile Page Speed Optimization</h2>
+<p class="mb-4">Speed is a direct ranking factor:</p>
+<p class="mb-4"><strong>Mobile Speed Benchmarks</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Metric</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Good</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Needs Improvement</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Poor</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Load Time</td><td class="border border-gray-200 px-4 py-2"><3 seconds</td><td class="border border-gray-200 px-4 py-2">3-5 seconds</td><td class="border border-gray-200 px-4 py-2">>5 seconds</td></tr><tr><td class="border border-gray-200 px-4 py-2">First Contentful Paint</td><td class="border border-gray-200 px-4 py-2"><1.8s</td><td class="border border-gray-200 px-4 py-2">1.8-3.0s</td><td class="border border-gray-200 px-4 py-2">>3.0s</td></tr><tr><td class="border border-gray-200 px-4 py-2">Time to Interactive</td><td class="border border-gray-200 px-4 py-2"><3.8s</td><td class="border border-gray-200 px-4 py-2">3.8-7.3s</td><td class="border border-gray-200 px-4 py-2">>7.3s</td></tr><tr><td class="border border-gray-200 px-4 py-2">Total Blocking Time</td><td class="border border-gray-200 px-4 py-2"><200ms</td><td class="border border-gray-200 px-4 py-2">200-600ms</td><td class="border border-gray-200 px-4 py-2">>600ms</td></tr></tbody></table></div>
+<strong>Mobile Speed Optimization Tactics</strong>
+<p class="mb-4"><strong>Image Optimization</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tactic</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Implementation</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Next-gen formats</td><td class="border border-gray-200 px-4 py-2">WebP, AVIF</td><td class="border border-gray-200 px-4 py-2">25-35% smaller</td></tr><tr><td class="border border-gray-200 px-4 py-2">Compression</td><td class="border border-gray-200 px-4 py-2">TinyPNG, Squoosh</td><td class="border border-gray-200 px-4 py-2">50-80% reduction</td></tr><tr><td class="border border-gray-200 px-4 py-2">Lazy loading</td><td class="border border-gray-200 px-4 py-2">Native loading="lazy"</td><td class="border border-gray-200 px-4 py-2">Faster initial load</td></tr><tr><td class="border border-gray-200 px-4 py-2">Responsive images</td><td class="border border-gray-200 px-4 py-2">srcset attribute</td><td class="border border-gray-200 px-4 py-2">Serve right size</td></tr><tr><td class="border border-gray-200 px-4 py-2">CDN</td><td class="border border-gray-200 px-4 py-2">Cloudflare, Cloudfront</td><td class="border border-gray-200 px-4 py-2">Faster delivery</td></tr></tbody></table></div>
+<strong>Code Optimization</strong>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tactic</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Implementation</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Minification</td><td class="border border-gray-200 px-4 py-2">CSS, JS, HTML</td><td class="border border-gray-200 px-4 py-2">10-20% reduction</td></tr><tr><td class="border border-gray-200 px-4 py-2">Compression</td><td class="border border-gray-200 px-4 py-2">Gzip, Brotli</td><td class="border border-gray-200 px-4 py-2">70-90% reduction</td></tr><tr><td class="border border-gray-200 px-4 py-2">Critical CSS</td><td class="border border-gray-200 px-4 py-2">Inline above-fold</td><td class="border border-gray-200 px-4 py-2">Faster FCP</td></tr><tr><td class="border border-gray-200 px-4 py-2">Async/Defer JS</td><td class="border border-gray-200 px-4 py-2">Non-blocking scripts</td><td class="border border-gray-200 px-4 py-2">Faster TTI</td></tr><tr><td class="border border-gray-200 px-4 py-2">Remove unused CSS</td><td class="border border-gray-200 px-4 py-2">PurgeCSS, UnCSS</td><td class="border border-gray-200 px-4 py-2">Smaller files</td></tr></tbody></table></div>
+<strong>Server Optimization</strong>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tactic</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Implementation</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">HTTP/2</td><td class="border border-gray-200 px-4 py-2">Enable on server</td><td class="border border-gray-200 px-4 py-2">Faster multiplexing</td></tr><tr><td class="border border-gray-200 px-4 py-2">HTTP/3</td><td class="border border-gray-200 px-4 py-2">QUIC protocol</td><td class="border border-gray-200 px-4 py-2">Faster mobile</td></tr><tr><td class="border border-gray-200 px-4 py-2">Browser caching</td><td class="border border-gray-200 px-4 py-2">Cache-Control headers</td><td class="border border-gray-200 px-4 py-2">Repeat visits faster</td></tr><tr><td class="border border-gray-200 px-4 py-2">Preconnect</td><td class="border border-gray-200 px-4 py-2">DNS prefetch</td><td class="border border-gray-200 px-4 py-2">Faster third-party</td></tr><tr><td class="border border-gray-200 px-4 py-2">Edge caching</td><td class="border border-gray-200 px-4 py-2">CDN edge locations</td><td class="border border-gray-200 px-4 py-2">Faster global delivery</td></tr></tbody></table></div>
+<strong>Mobile Speed Tools</strong>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tool</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Purpose</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Free</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">PageSpeed Insights</td><td class="border border-gray-200 px-4 py-2">Speed scoring</td><td class="border border-gray-200 px-4 py-2">Yes</td></tr><tr><td class="border border-gray-200 px-4 py-2">GTmetrix</td><td class="border border-gray-200 px-4 py-2">Waterfall analysis</td><td class="border border-gray-200 px-4 py-2">Yes (limited)</td></tr><tr><td class="border border-gray-200 px-4 py-2">WebPageTest</td><td class="border border-gray-200 px-4 py-2">Advanced testing</td><td class="border border-gray-200 px-4 py-2">Yes</td></tr><tr><td class="border border-gray-200 px-4 py-2">Chrome Lighthouse</td><td class="border border-gray-200 px-4 py-2">Audit in browser</td><td class="border border-gray-200 px-4 py-2">Yes</td></tr><tr><td class="border border-gray-200 px-4 py-2">DebugBear</td><td class="border border-gray-200 px-4 py-2">Continuous monitoring</td><td class="border border-gray-200 px-4 py-2">No</td></tr></tbody></table></div>
+Test your mobile speed with <a href="#affiliate-link-placeholder" class="text-primary-600 hover:text-primary-700 underline">Google PageSpeed Insights</a>.
+<h2>3. Core Web Vitals for Mobile</h2>
+<p class="mb-4">Google's user experience metrics:</p>
+<p class="mb-4"><strong>Core Web Vitals Explained</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Metric</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">What It Measures</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Good Threshold</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">LCP (Largest Contentful Paint)</td><td class="border border-gray-200 px-4 py-2">Load speed</td><td class="border border-gray-200 px-4 py-2"><2.5s</td></tr><tr><td class="border border-gray-200 px-4 py-2">FID (First Input Delay)</td><td class="border border-gray-200 px-4 py-2">Interactivity</td><td class="border border-gray-200 px-4 py-2"><100ms</td></tr><tr><td class="border border-gray-200 px-4 py-2">CLS (Cumulative Layout Shift)</td><td class="border border-gray-200 px-4 py-2">Visual stability</td><td class="border border-gray-200 px-4 py-2"><0.1</td></tr></tbody></table></div>
+<strong>Mobile-Specific Considerations</strong>
+<ul class="list-disc list-inside my-4">
+<li>Mobile devices slower than desktop (adjust expectations)</li>
+<li>4G/5G networks vary (test on real connections)</li>
+<li>Touch interaction differs from click (FID critical)</li>
+<li>Smaller screens amplify layout shift impact</li>
+</ul>
+<p class="mb-4"><strong>LCP Optimization (Mobile)</strong></p>
+<p class="mb-4"><strong>Common Issues</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Large hero images (unoptimized)</li>
+<li>Slow server response (TTFB)</li>
+<li>Render-blocking resources</li>
+<li>Client-side rendering</li>
+</ul>
+<p class="mb-4"><strong>Fixes</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">1. Optimize LCP image (compress, WebP, proper size)
+<ol class="list-decimal list-inside my-4">
+<li>Reduce TTFB (CDN, caching, hosting upgrade)</li>
+<li>Remove render-blocking CSS/JS</li>
+<li>Preload LCP resource</li>
+<li>Use server-side rendering</li>
+</ol>
+</code></pre>
+<p class="mb-4"><strong>FID Optimization (Mobile)</strong></p>
+<p class="mb-4"><strong>Common Issues</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Heavy JavaScript execution</li>
+<li>Long tasks blocking main thread</li>
+<li>Third-party scripts (analytics, ads)</li>
+<li>Complex event handlers</li>
+</ul>
+<p class="mb-4"><strong>Fixes</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">1. Break up long tasks
+<ol class="list-decimal list-inside my-4">
+<li>Defer non-critical JS</li>
+<li>Use web workers for heavy computation</li>
+<li>Minimize third-party impact</li>
+<li>Optimize event handlers</li>
+</ol>
+</code></pre>
+<p class="mb-4"><strong>CLS Optimization (Mobile)</strong></p>
+<p class="mb-4"><strong>Common Issues</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Images without dimensions</li>
+<li>Ads inserting content</li>
+<li>Dynamic content injection</li>
+<li>Web fonts causing FOUT</li>
+<li>Late-loading CTAs</li>
+</ul>
+<p class="mb-4"><strong>Fixes</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">1. Set explicit width/height on images
+<ol class="list-decimal list-inside my-4">
+<li>Reserve ad space (placeholder)</li>
+<li>Preload web fonts</li>
+<li>Avoid inserting content above existing</li>
+<li>Use font-display: optional</li>
+</ol>
+</code></pre>
+<p class="mb-4"><strong>Core Web Vitals Tools</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tool</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Use Case</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Free</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Search Console</td><td class="border border-gray-200 px-4 py-2">Site-wide report</td><td class="border border-gray-200 px-4 py-2">Yes</td></tr><tr><td class="border border-gray-200 px-4 py-2">PageSpeed Insights</td><td class="border border-gray-200 px-4 py-2">URL testing</td><td class="border border-gray-200 px-4 py-2">Yes</td></tr><tr><td class="border border-gray-200 px-4 py-2">Chrome UX Report</td><td class="border border-gray-200 px-4 py-2">Real-user data</td><td class="border border-gray-200 px-4 py-2">Yes</td></tr><tr><td class="border border-gray-200 px-4 py-2">WebPageTest</td><td class="border border-gray-200 px-4 py-2">Lab + field data</td><td class="border border-gray-200 px-4 py-2">Yes</td></tr><tr><td class="border border-gray-200 px-4 py-2">DebugBear</td><td class="border border-gray-200 px-4 py-2">Continuous monitoring</td><td class="border border-gray-200 px-4 py-2">No</td></tr></tbody></table></div>
+<h2>4. Mobile UX and SEO Correlation</h2>
+<p class="mb-4">User experience impacts rankings:</p>
+<p class="mb-4"><strong>Mobile UX Ranking Signals</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Signal</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Impact</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Measurement</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Bounce Rate</td><td class="border border-gray-200 px-4 py-2">High</td><td class="border border-gray-200 px-4 py-2">GA4</td></tr><tr><td class="border border-gray-200 px-4 py-2">Dwell Time</td><td class="border border-gray-200 px-4 py-2">Medium-High</td><td class="border border-gray-200 px-4 py-2">GA4</td></tr><tr><td class="border border-gray-200 px-4 py-2">Pogo-Pogoing</td><td class="border border-gray-200 px-4 py-2">Medium</td><td class="border border-gray-200 px-4 py-2">Search Console</td></tr><tr><td class="border border-gray-200 px-4 py-2">Mobile Usability Errors</td><td class="border border-gray-200 px-4 py-2">High</td><td class="border border-gray-200 px-4 py-2">Search Console</td></tr><tr><td class="border border-gray-200 px-4 py-2">Core Web Vitals</td><td class="border border-gray-200 px-4 py-2">High</td><td class="border border-gray-200 px-4 py-2">Search Console</td></tr></tbody></table></div>
+<strong>Mobile UX Best Practices</strong>
+<p class="mb-4"><strong>Touch Targets</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Minimum size: 48x48 pixels</li>
+<li>Adequate spacing between targets</li>
+<li>Thumb-friendly placement (bottom of screen)</li>
+<li>Avoid hover states (no hover on mobile)</li>
+</ul>
+<p class="mb-4"><strong>Typography</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Element</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Mobile Recommendation</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Body text</td><td class="border border-gray-200 px-4 py-2">16px minimum (no zoom needed)</td></tr><tr><td class="border border-gray-200 px-4 py-2">Line height</td><td class="border border-gray-200 px-4 py-2">1.5x font size</td></tr><tr><td class="border border-gray-200 px-4 py-2">Paragraph spacing</td><td class="border border-gray-200 px-4 py-2">Adequate white space</td></tr><tr><td class="border border-gray-200 px-4 py-2">Contrast ratio</td><td class="border border-gray-200 px-4 py-2">4.5:1 minimum (WCAG AA)</td></tr></tbody></table></div>
+<strong>Navigation</strong>
+<ul class="list-disc list-inside my-4">
+<li>Hamburger menus acceptable</li>
+<li>Sticky navigation for long pages</li>
+<li>Breadcrumb navigation</li>
+<li>Search functionality prominent</li>
+<li>Clear information architecture</li>
+</ul>
+<p class="mb-4"><strong>Forms</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Large input fields (finger-friendly)</li>
+<li>Appropriate keyboard types (email, tel, number)</li>
+<li>Clear error messages</li>
+<li>Progress indicators (multi-step)</li>
+<li>Autocomplete enabled</li>
+</ul>
+<p class="mb-4"><strong>Mobile UX Audit Checklist</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>✅ Touch targets 48x48px minimum</li>
+<li>✅ Text readable without zoom</li>
+<li>✅ No horizontal scrolling</li>
+<li>✅ Forms mobile-friendly</li>
+<li>✅ Navigation accessible</li>
+<li>✅ Pop-ups non-intrusive</li>
+<li>✅ CTAs thumb-reachable</li>
+</ul>
+<h2>5. Structured Data for Mobile</h2>
+<p class="mb-4">Schema markup enhances mobile SERPs:</p>
+<p class="mb-4"><strong>Mobile SERP Features</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Feature</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Schema Type</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Mobile Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Rich Snippets</td><td class="border border-gray-200 px-4 py-2">Review, Product, Recipe</td><td class="border border-gray-200 px-4 py-2">Enhanced display</td></tr><tr><td class="border border-gray-200 px-4 py-2">FAQ Rich Results</td><td class="border border-gray-200 px-4 py-2">FAQPage</td><td class="border border-gray-200 px-4 py-2">Expandable results</td></tr><tr><td class="border border-gray-200 px-4 py-2">How-To Rich Results</td><td class="border border-gray-200 px-4 py-2">HowTo</td><td class="border border-gray-200 px-4 py-2">Step-by-step display</td></tr><tr><td class="border border-gray-200 px-4 py-2">Job Postings</td><td class="border border-gray-200 px-4 py-2">JobPosting</td><td class="border border-gray-200 px-4 py-2">Job carousel</td></tr><tr><td class="border border-gray-200 px-4 py-2">Events</td><td class="border border-gray-200 px-4 py-2">Event</td><td class="border border-gray-200 px-4 py-2">Event carousel</td></tr><tr><td class="border border-gray-200 px-4 py-2">Local Pack</td><td class="border border-gray-200 px-4 py-2">LocalBusiness</td><td class="border border-gray-200 px-4 py-2">Map pack inclusion</td></tr></tbody></table></div>
+<strong>Mobile Schema Implementation</strong>
+<p class="mb-4"><strong>JSON-LD (Recommended)</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-html">&lt;script type=&quot;application/ld+json&quot;&gt;
+{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;LocalBusiness&quot;,
+  &quot;name&quot;: &quot;Business Name&quot;,
+  &quot;address&quot;: {
+    &quot;@type&quot;: &quot;PostalAddress&quot;,
+    &quot;streetAddress&quot;: &quot;123 Main St&quot;,
+    &quot;addressLocality&quot;: &quot;City&quot;,
+    &quot;addressRegion&quot;: &quot;State&quot;,
+    &quot;postalCode&quot;: &quot;12345&quot;
+  },
+  &quot;telephone&quot;: &quot;+1-555-123-4567&quot;,
+  &quot;openingHours&quot;: &quot;Mo-Fr 09:00-17:00&quot;
+}
+&lt;/script&gt;
+</code></pre>
+<p class="mb-4"><strong>Mobile-Specific Schema</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Schema Type</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Mobile Benefit</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">AMP schemas</td><td class="border border-gray-200 px-4 py-2">AMP carousel eligibility</td></tr><tr><td class="border border-gray-200 px-4 py-2">MobileApp</td><td class="border border-gray-200 px-4 py-2">App indexing</td></tr><tr><td class="border border-gray-200 px-4 py-2">Action schemas</td><td class="border border-gray-200 px-4 py-2">Voice action triggers</td></tr></tbody></table></div>
+<strong>Testing Mobile Schema</strong>
+<ul class="list-disc list-inside my-4">
+<li>Google Rich Results Test</li>
+<li>Schema Markup Validator</li>
+<li>Search Console Enhanced Reports</li>
+</ul>
+<p class="mb-4">Validate your mobile schema with <a href="#affiliate-link-placeholder" class="text-primary-600 hover:text-primary-700 underline">Google's Rich Results Test</a>.</p>
+<h2>6. App Indexing and Deep Linking</h2>
+<p class="mb-4">Connect app and web presence:</p>
+<p class="mb-4"><strong>App Indexing Overview</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Links app content to web content</li>
+<li>App appears in mobile search results</li>
+<li>Deep links open app directly</li>
+<li>Requires Firebase setup</li>
+</ul>
+<p class="mb-4"><strong>Implementation Steps</strong></p>
+<ol class="list-decimal list-inside my-4">
+<li><strong>Set up Firebase</strong></li>
+</ol>
+   - Create Firebase project
+   - Add Android/iOS apps
+   - Download config files
+<ol class="list-decimal list-inside my-4">
+<li><strong>Implement Deep Links</strong></li>
+</ol>
+   - URI schemes (custom)
+   - App Links (Android)
+   - Universal Links (iOS)
+<ol class="list-decimal list-inside my-4">
+<li><strong>Add Schema Markup</strong></li>
+</ol>
+   - MobileApplication schema
+   - URL mapping (web ↔ app)
+<ol class="list-decimal list-inside my-4">
+<li><strong>Test Implementation</strong></li>
+</ol>
+   - Firebase Test Console
+   - Search Console App Indexing report
+<p class="mb-4"><strong>Deep Linking Benefits</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Benefit</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">App installs from search</td><td class="border border-gray-200 px-4 py-2">Direct user acquisition</td></tr><tr><td class="border border-gray-200 px-4 py-2">Improved app engagement</td><td class="border border-gray-200 px-4 py-2">Deep link to specific content</td></tr><tr><td class="border border-gray-200 px-4 py-2">Web-to-app handoff</td><td class="border border-gray-200 px-4 py-2">Seamless experience</td></tr><tr><td class="border border-gray-200 px-4 py-2">App content indexed</td><td class="border border-gray-200 px-4 py-2">App appears in SERPs</td></tr></tbody></table></div>
+<strong>App Indexing Tools</strong>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tool</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Platform</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Purpose</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Firebase</td><td class="border border-gray-200 px-4 py-2">Android/iOS</td><td class="border border-gray-200 px-4 py-2">App indexing setup</td></tr><tr><td class="border border-gray-200 px-4 py-2">Search Console</td><td class="border border-gray-200 px-4 py-2">Both</td><td class="border border-gray-200 px-4 py-2">App indexing report</td></tr><tr><td class="border border-gray-200 px-4 py-2">Branch.io</td><td class="border border-gray-200 px-4 py-2">Both</td><td class="border border-gray-200 px-4 py-2">Deep link management</td></tr><tr><td class="border border-gray-200 px-4 py-2">AppsFlyer</td><td class="border border-gray-200 px-4 py-2">Both</td><td class="border border-gray-200 px-4 py-2">Attribution + deep links</td></tr></tbody></table></div>
+<h2>7. Mobile Local SEO (Near Me Searches)</h2>
+<p class="mb-4">Mobile dominates local search:</p>
+<p class="mb-4"><strong>Mobile Local Search Statistics</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>76% of local searches on mobile result in store visit</li>
+<li>"Near me" searches grew 500%+ (past 5 years)</li>
+<li>Mobile local searches have highest purchase intent</li>
+<li>Voice search often local ("near me" queries)</li>
+</ul>
+<p class="mb-4"><strong>Mobile Local SEO Tactics</strong></p>
+<p class="mb-4"><strong>Google Business Profile Optimization</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Element</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Mobile Impact</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Accurate NAP</td><td class="border border-gray-200 px-4 py-2">Critical for "near me"</td></tr><tr><td class="border border-gray-200 px-4 py-2">Business hours</td><td class="border border-gray-200 px-4 py-2">Mobile users check before visiting</td></tr><tr><td class="border border-gray-200 px-4 py-2">Photos</td><td class="border border-gray-200 px-4 py-2">Mobile browsing experience</td></tr><tr><td class="border border-gray-200 px-4 py-2">Reviews</td><td class="border border-gray-200 px-4 py-2">Mobile review reading common</td></tr><tr><td class="border border-gray-200 px-4 py-2">Posts</td><td class="border border-gray-200 px-4 py-2">Mobile SERP visibility</td></tr><tr><td class="border border-gray-200 px-4 py-2">Q&A</td><td class="border border-gray-200 px-4 py-2">Mobile research behavior</td></tr></tbody></table></div>
+<strong>Local Content Optimization</strong>
+<ul class="list-disc list-inside my-4">
+<li>Location pages mobile-friendly</li>
+<li>Click-to-call buttons</li>
+<li>Directions links (Google Maps)</li>
+<li>Store locator mobile-optimized</li>
+<li>Mobile-friendly contact forms</li>
+</ul>
+<p class="mb-4"><strong>Mobile Local Schema</strong></p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-json">{
+  &quot;@type&quot;: &quot;LocalBusiness&quot;,
+  &quot;name&quot;: &quot;Business Name&quot;,
+  &quot;address&quot;: {...},
+  &quot;geo&quot;: {
+    &quot;latitude&quot;: &quot;40.7128&quot;,
+    &quot;longitude&quot;: &quot;-74.0060&quot;
+  },
+  &quot;openingHours&quot;: &quot;Mo-Fr 09:00-17:00&quot;,
+  &quot;telephone&quot;: &quot;+1-555-123-4567&quot;
+}
+</code></pre>
+<p class="mb-4"><strong>Mobile Local Rank Tracking</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Track "near me" keywords</li>
+<li>Monitor local pack mobile rankings</li>
+<li>Track GBP mobile actions (calls, directions)</li>
+<li>Use local rank tracking tools</li>
+</ul>
+<h2>8. Mobile SERP Features Optimization</h2>
+<p class="mb-4">Win mobile SERP real estate:</p>
+<p class="mb-4"><strong>Mobile SERP Features</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Feature</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Desktop Parity</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Mobile Optimization</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Featured Snippets</td><td class="border border-gray-200 px-4 py-2">Yes</td><td class="border border-gray-200 px-4 py-2">Optimize for position zero</td></tr><tr><td class="border border-gray-200 px-4 py-2">Local Pack</td><td class="border border-gray-200 px-4 py-2">Yes (smaller)</td><td class="border border-gray-200 px-4 py-2">GBP optimization critical</td></tr><tr><td class="border border-gray-200 px-4 py-2">People Also Ask</td><td class="border border-gray-200 px-4 py-2">Yes (expandable)</td><td class="border border-gray-200 px-4 py-2">Target question keywords</td></tr><tr><td class="border border-gray-200 px-4 py-2">Image Pack</td><td class="border border-gray-200 px-4 py-2">Yes (swipeable)</td><td class="border border-gray-200 px-4 py-2">Optimize images for mobile</td></tr><tr><td class="border border-gray-200 px-4 py-2">Video Carousel</td><td class="border border-gray-200 px-4 py-2">Yes</td><td class="border border-gray-200 px-4 py-2">Video schema + optimization</td></tr><tr><td class="border border-gray-200 px-4 py-2">App Pack</td><td class="border border-gray-200 px-4 py-2">No (mobile only)</td><td class="border border-gray-200 px-4 py-2">App store optimization</td></tr><tr><td class="border border-gray-200 px-4 py-2">Top Stories</td><td class="border border-gray-200 px-4 py-2">Yes (AMP declining)</td><td class="border border-gray-200 px-4 py-2">News schema + freshness</td></tr></tbody></table></div>
+<strong>Featured Snippet Optimization (Mobile)</strong>
+<p class="mb-4"><strong>Format Optimization</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Format</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Mobile Display</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Optimization</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Paragraph</td><td class="border border-gray-200 px-4 py-2">40-60 words</td><td class="border border-gray-200 px-4 py-2">Concise answer first</td></tr><tr><td class="border border-gray-200 px-4 py-2">List</td><td class="border border-gray-200 px-4 py-2">Expandable</td><td class="border border-gray-200 px-4 py-2">Clear numbered steps</td></tr><tr><td class="border border-gray-200 px-4 py-2">Table</td><td class="border border-gray-200 px-4 py-2">Scrollable</td><td class="border border-gray-200 px-4 py-2">Simple structure</td></tr><tr><td class="border border-gray-200 px-4 py-2">Video</td><td class="border border-gray-200 px-4 py-2">Embedded</td><td class="border border-gray-200 px-4 py-2">Video schema + transcript</td></tr></tbody></table></div>
+<strong>Mobile Snippet Tactics</strong>
+<ul class="list-disc list-inside my-4">
+<li>Answer questions in first 100 words</li>
+<li>Use clear headers (H2, H3)</li>
+<li>Format lists for mobile readability</li>
+<li>Include schema markup</li>
+<li>Optimize for voice search (conversational)</li>
+</ul>
+<p class="mb-4"><strong>Local Pack Optimization (Mobile)</strong></p>
+<p class="mb-4"><strong>Ranking Factors</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Relevance (business category)</li>
+<li>Distance (proximity to searcher)</li>
+<li>Prominence (reviews, citations, authority)</li>
+<li>GBP completeness</li>
+<li>Mobile engagement (calls, directions, clicks)</li>
+</ul>
+<p class="mb-4"><strong>Optimization Tactics</strong></p>
+<ul class="list-disc list-inside my-4">
+<li>Complete all GBP fields</li>
+<li>Encourage mobile reviews</li>
+<li>Post weekly GBP updates</li>
+<li>Add mobile-friendly photos</li>
+<li>Enable messaging (mobile)</li>
+<li>Add booking links (mobile)</li>
+</ul>
+<h2>9. Mobile Technical SEO Audit Checklist</h2>
+<p class="mb-4">Comprehensive mobile audit:</p>
+<p class="mb-4"><strong>Mobile Technical Checklist</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Area</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Check</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tool</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Indexing</td><td class="border border-gray-200 px-4 py-2">Mobile version indexed</td><td class="border border-gray-200 px-4 py-2">Search Console</td></tr><tr><td class="border border-gray-200 px-4 py-2">Crawling</td><td class="border border-gray-200 px-4 py-2">Mobile robots.txt allows</td><td class="border border-gray-200 px-4 py-2">Manual check</td></tr><tr><td class="border border-gray-200 px-4 py-2">Responsive</td><td class="border border-gray-200 px-4 py-2">Viewport meta tag</td><td class="border border-gray-200 px-4 py-2">Manual check</td></tr><tr><td class="border border-gray-200 px-4 py-2">Speed</td><td class="border border-gray-200 px-4 py-2">Mobile PageSpeed >50</td><td class="border border-gray-200 px-4 py-2">PageSpeed Insights</td></tr><tr><td class="border border-gray-200 px-4 py-2">Core Web Vitals</td><td class="border border-gray-200 px-4 py-2">Mobile CWV passing</td><td class="border border-gray-200 px-4 py-2">Search Console</td></tr><tr><td class="border border-gray-200 px-4 py-2">Usability</td><td class="border border-gray-200 px-4 py-2">No mobile errors</td><td class="border border-gray-200 px-4 py-2">Search Console</td></tr><tr><td class="border border-gray-200 px-4 py-2">Structured Data</td><td class="border border-gray-200 px-4 py-2">Mobile schema valid</td><td class="border border-gray-200 px-4 py-2">Rich Results Test</td></tr><tr><td class="border border-gray-200 px-4 py-2">Internal Links</td><td class="border border-gray-200 px-4 py-2">Mobile links work</td><td class="border border-gray-200 px-4 py-2">Manual crawl</td></tr><tr><td class="border border-gray-200 px-4 py-2">Pop-ups</td><td class="border border-gray-200 px-4 py-2">Non-intrusive</td><td class="border border-gray-200 px-4 py-2">Manual check</td></tr><tr><td class="border border-gray-200 px-4 py-2">Touch Targets</td><td class="border border-gray-200 px-4 py-2">48x48px minimum</td><td class="border border-gray-200 px-4 py-2">Manual audit</td></tr></tbody></table></div>
+<strong>Mobile Audit Tools</strong>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Tool</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Purpose</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Free</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Search Console Mobile Usability</td><td class="border border-gray-200 px-4 py-2">Error detection</td><td class="border border-gray-200 px-4 py-2">Yes</td></tr><tr><td class="border border-gray-200 px-4 py-2">PageSpeed Insights</td><td class="border border-gray-200 px-4 py-2">Speed scoring</td><td class="border border-gray-200 px-4 py-2">Yes</td></tr><tr><td class="border border-gray-200 px-4 py-2">Lighthouse</td><td class="border border-gray-200 px-4 py-2">Comprehensive audit</td><td class="border border-gray-200 px-4 py-2">Yes</td></tr><tr><td class="border border-gray-200 px-4 py-2">Screaming Frog</td><td class="border border-gray-200 px-4 py-2">Mobile crawl</td><td class="border border-gray-200 px-4 py-2">Free (500 URLs)</td></tr><tr><td class="border border-gray-200 px-4 py-2">BrowserStack</td><td class="border border-gray-200 px-4 py-2">Device testing</td><td class="border border-gray-200 px-4 py-2">No</td></tr></tbody></table></div>
+<strong>Common Mobile Errors</strong>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Error</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Cause</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Fix</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Text too small</td><td class="border border-gray-200 px-4 py-2">Font size <16px</td><td class="border border-gray-200 px-4 py-2">Increase to 16px minimum</td></tr><tr><td class="border border-gray-200 px-4 py-2">Touch targets too close</td><td class="border border-gray-200 px-4 py-2">Inadequate spacing</td><td class="border border-gray-200 px-4 py-2">Add padding/margins</td></tr><tr><td class="border border-gray-200 px-4 py-2">Content wider than screen</td><td class="border border-gray-200 px-4 py-2">Fixed widths</td><td class="border border-gray-200 px-4 py-2">Use responsive CSS</td></tr><tr><td class="border border-gray-200 px-4 py-2">Clickable elements too close</td><td class="border border-gray-200 px-4 py-2">Small touch targets</td><td class="border border-gray-200 px-4 py-2">Increase to 48x48px</td></tr><tr><td class="border border-gray-200 px-4 py-2">Interstitials intrusive</td><td class="border border-gray-200 px-4 py-2">Pop-ups blocking content</td><td class="border border-gray-200 px-4 py-2">Use compliant interstitials</td></tr><tr><td class="border border-gray-200 px-4 py-2">Viewport not set</td><td class="border border-gray-200 px-4 py-2">Missing meta tag</td><td class="border border-gray-200 px-4 py-2">Add viewport meta</td></tr></tbody></table></div>
+Test your mobile site with <a href="#affiliate-link-placeholder" class="text-primary-600 hover:text-primary-700 underline">Google Mobile-Friendly Test</a>.
+<h2>10. Mobile Page Speed Optimization Case Study</h2>
+<p class="mb-4">Real-world speed improvements:</p>
+<p class="mb-4"><strong>E-commerce Site Optimization</strong></p>
+<p class="mb-4"><strong>Before Optimization</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Metric</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Value</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Mobile Load Time</td><td class="border border-gray-200 px-4 py-2">6.8 seconds</td></tr><tr><td class="border border-gray-200 px-4 py-2">Mobile Bounce Rate</td><td class="border border-gray-200 px-4 py-2">68%</td></tr><tr><td class="border border-gray-200 px-4 py-2">Mobile Conversion Rate</td><td class="border border-gray-200 px-4 py-2">1.2%</td></tr><tr><td class="border border-gray-200 px-4 py-2">Core Web Vitals</td><td class="border border-gray-200 px-4 py-2">Failing</td></tr></tbody></table></div>
+<strong>Optimization Actions</strong>
+<ol class="list-decimal list-inside my-4">
+<li>Image optimization (WebP, compression)</li>
+<li>Critical CSS inlining</li>
+<li>JavaScript deferred</li>
+<li>CDN implementation</li>
+<li>Server upgrade (HTTP/2)</li>
+<li>Lazy loading implemented</li>
+<li>Third-party scripts audited</li>
+</ol>
+<p class="mb-4"><strong>After Optimization</strong></p>
+<div class="overflow-x-auto my-4"><table class="min-w-full border border-gray-200"><thead class="bg-gray-50"><tr><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Metric</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Value</th><th class="border border-gray-200 px-4 py-2 text-left font-semibold">Improvement</th></tr></thead><tbody><tr><td class="border border-gray-200 px-4 py-2">Mobile Load Time</td><td class="border border-gray-200 px-4 py-2">2.4 seconds</td><td class="border border-gray-200 px-4 py-2">-65%</td></tr><tr><td class="border border-gray-200 px-4 py-2">Mobile Bounce Rate</td><td class="border border-gray-200 px-4 py-2">45%</td><td class="border border-gray-200 px-4 py-2">-34%</td></tr><tr><td class="border border-gray-200 px-4 py-2">Mobile Conversion Rate</td><td class="border border-gray-200 px-4 py-2">2.1%</td><td class="border border-gray-200 px-4 py-2">+75%</td></tr><tr><td class="border border-gray-200 px-4 py-2">Core Web Vitals</td><td class="border border-gray-200 px-4 py-2">Passing</td><td class="border border-gray-200 px-4 py-2">Fixed</td></tr></tbody></table></div>
+<strong>Revenue Impact</strong>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto my-4"><code class="language-">Before: 10,000 sessions × 1.2% CR × $50 AOV = $6,000/month
+After:  10,000 sessions × 2.1% CR × $50 AOV = $10,500/month
+Increase: $4,500/month (+75%)
+</code></pre>
+<h2>Conclusion</h2>
+<p class="mb-4">Mobile SEO is no longer optional—it's essential. With mobile-first indexing, your mobile site determines your rankings. Optimize for speed, user experience, and mobile-specific features to dominate mobile search.</p>
+<p class="mb-4">Start with responsive design, then focus on Core Web Vitals, mobile UX, and local optimization. Audit your mobile site regularly and fix issues before they impact rankings. Mobile optimization compounds—each improvement builds on the last.</p>
+<hr class="my-8 border-gray-200">
+<p class="mb-4"><strong>Ready to dominate mobile search?</strong></p>
+<p class="mb-4">Our mobile SEO audit identifies every issue holding your mobile rankings back. Get actionable fixes and see competitors' mobile strategies.</p>
+<p class="mb-4"><a href="#affiliate-link-placeholder" class="text-primary-600 hover:text-primary-700 underline"><strong>Get Your Free Mobile SEO Audit</strong></a></p>
+<p class="mb-4">First 10 audits this month include Core Web Vitals optimization recommendations ($400 value).</p>
+<hr class="my-8 border-gray-200">
+<p class="mb-4"><em>Last Updated: March 14, 2026</em></p>
+            </div>
+        </div>
+    </article>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-primary-500 to-accent-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+                Ready to Implement These Strategies?
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Get a professional website with built-in SEO that implements these best practices from day one. Start ranking higher today.
+            </p>
+            <a href="/#contact" class="inline-block bg-white text-primary-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-2xl">
+                Get Your Free Mockup
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <span class="text-4xl">⚡</span>
+                        <span class="text-2xl font-bold">EnergizedSEO</span>
+                    </div>
+                    <p class="text-gray-400 max-w-md">Professional websites with built-in SEO for local businesses. Get more customers on autopilot.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="/#process" class="hover:text-white transition-colors">How It Works</a></li>
+                        <li><a href="/blog" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="/#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="/#contact" class="hover:text-white transition-colors">Get Free Mockup</a></li>
+                        <li><a href="/#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 EnergizedSEO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
