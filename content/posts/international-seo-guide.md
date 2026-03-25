@@ -1,7 +1,7 @@
 ---
 title: "International SEO Complete Guide: hreflang Tags, Multi-Language Targeting & Geo-Targeting Strategies"
 meta_description: "Master international SEO with our complete guide covering hreflang implementation, ccTLDs vs subdirectories, multi-language targeting, geo-targeting strategies, and international link building tactics."
-date: 2026-03-24
+date: 2026-03-01
 author: "EnergizedSEO Team"
 categories: ["International SEO", "Technical SEO", "SEO Strategy"]
 tags: ["hreflang", "international seo", "multi-language seo", "geo-targeting", "ccTLD", "localization"]

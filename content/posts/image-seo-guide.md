@@ -1,7 +1,7 @@
 ---
 title: "Image SEO Complete Guide: Optimize Images for Search Rankings in 2026"
 meta_description: "Master image SEO with this complete guide. Learn alt text best practices, image sitemaps, structured data, compression techniques, and how images impact Core Web Vitals and search rankings."
-date: 2026-03-24
+date: 2026-03-16
 author: "EnergizedSEO Team"
 tags: ["image seo", "technical seo", "core web vitals", "schema markup", "image optimization"]
 categories: ["Technical SEO", "Content Optimization"]

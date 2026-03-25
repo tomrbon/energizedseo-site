@@ -1,7 +1,7 @@
 ---
 title: "Video & YouTube SEO Complete Guide: Rank Higher on YouTube and Google"
 meta_description: "Master video SEO with our complete guide to YouTube ranking factors, video schema markup, transcripts, thumbnails, and engagement signals. Boost your video visibility today."
-date: 2026-03-24
+date: 2026-03-18
 author: "EnergizedSEO Team"
 categories: ["Video SEO", "YouTube Marketing", "Technical SEO"]
 tags: ["video seo", "youtube seo", "video schema", "video sitemap", "youtube ranking"]
