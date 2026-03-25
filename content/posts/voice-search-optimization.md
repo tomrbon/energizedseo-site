@@ -1,6 +1,6 @@
 ---
 title: "Voice Search Optimization: Complete Guide to Ranking for Voice Queries in 2026"
-date: 2026-03-14
+date: 2026-03-02
 draft: false
 categories: ["Voice Search", "Emerging SEO"]
 tags: ["voice search", "voice seo", "featured snippets", "alexa", "google assistant", "conversational search"]

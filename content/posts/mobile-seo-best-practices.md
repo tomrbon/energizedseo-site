@@ -1,6 +1,6 @@
 ---
 title: "Mobile SEO Best Practices: Complete Guide to Mobile-First Optimization in 2026"
-date: 2026-03-14
+date: 2026-03-01
 draft: false
 categories: ["Mobile SEO", "Technical SEO"]
 tags: ["mobile seo", "mobile-first indexing", "core web vitals", "responsive design", "page speed"]

@@ -1,6 +1,6 @@
 ---
 title: "Keyword Research Master Guide: From Beginner to Advanced in 2026"
-date: 2026-03-14
+date: 2026-02-26
 draft: false
 categories: ["Keyword Research", "SEO Fundamentals"]
 tags: ["keyword research", "seo keywords", "search volume", "keyword difficulty", "long-tail keywords"]

@@ -1,6 +1,6 @@
 ---
 title: "Local SEO for Small Business: Complete 2026 Guide"
-date: 2026-03-14
+date: 2026-02-19
 draft: false
 categories: ["Local SEO", "Small Business"]
 tags: ["local seo", "google business profile", "local search", "nap consistency", "local citations"]

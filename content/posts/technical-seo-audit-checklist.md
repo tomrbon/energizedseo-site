@@ -1,6 +1,6 @@
 ---
 title: "Technical SEO Audit Checklist: Complete Guide for 2026"
-date: 2026-03-14
+date: 2026-02-17
 draft: false
 categories: ["Technical SEO", "SEO Audit"]
 tags: ["technical seo", "seo audit", "crawlability", "site speed", "schema markup"]

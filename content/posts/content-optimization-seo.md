@@ -1,6 +1,6 @@
 ---
 title: "Content Optimization for SEO: Complete Guide to Ranking Higher in 2026"
-date: 2026-03-14
+date: 2026-02-24
 draft: false
 categories: ["On-Page SEO", "Content Marketing"]
 tags: ["content optimization", "on-page seo", "search intent", "content structure", "eeat"]

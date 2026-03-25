@@ -1,6 +1,6 @@
 ---
 title: "E-commerce SEO Complete Guide: Rank Product Pages and Drive Organic Sales in 2026"
-date: 2026-03-14
+date: 2026-03-03
 draft: false
 categories: ["E-commerce SEO", "Technical SEO"]
 tags: ["ecommerce seo", "product seo", "shopify seo", "woocommerce seo", "product optimization", "online store seo"]
